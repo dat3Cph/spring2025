@@ -5,7 +5,7 @@ nav_order: 1
 permalink: /
 ---
 
-# DAT 3. semester
+# DAT 3. semester Spring 2025
 
 The actual running of the 3rd semester takes place via Moodle. This means that on Moodle you can see the schedule and what is being worked on when. Most of the content is located here on GitHub. We have chosen to do this because many of the materials contain code snippets that GitHub can reproduce with syntax highlighting and the ability to copy the content. This saves us all a lot of time and effort.
 
