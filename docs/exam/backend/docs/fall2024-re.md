@@ -9,7 +9,6 @@ permalink: /exam/backend/fall2024-re
 sitemap: true
 nav_exclude: false
 search_exclude: false
-
 ---
 
 # Backend 1st RE-Exam Fall 2024 - Item Booking Application

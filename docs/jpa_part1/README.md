@@ -2,7 +2,7 @@
 title: JPA Part 1
 description: JPA Overview
 layout: default
-nav_order: 3    
+nav_order: 4   
 has_children: true
 permalink: /jpa-part-1
 ---
@@ -56,7 +56,6 @@ CodeLab exercises on JPA. All day is devoted to pair programming and Github coll
 - [Java annotations](https://www.youtube.com/watch?v=DkZr7_c9ry8&t=1s)
 
 ## Friday (exercise day)
-
 
 ### Slides
 

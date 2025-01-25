@@ -11,10 +11,10 @@ permalink: /deepdive-1/
 
 Topics covered in this week are:
 
-- Java Streams
-- Java lambdas
-- Java Time and Date API
 - Java Functional Programming
+- Java Lambdas
+- Java Streams
+- Java Time and Date API
 - Java Generics
 
 [Learning objectives for the week](./learningobjectives.md)
@@ -22,6 +22,10 @@ Topics covered in this week are:
 ## Monday
 
 We don't have any activities on this first Monday, but you should prepare for the week by watching the videos and reading the articles linked below.
+
+Wathch this video to get an overview of the week:
+
+- [Introduction to this week]()
 
 ## Tuesday (class)
 
@@ -32,14 +36,15 @@ Watch these videos - and code along:
 - [Lambda basics (13:04)](https://www.youtube.com/watch?t=1&v=tj5sLSFjVj4&ab_channel=CodingwithJohn)
 - [Java Streams (19:12)](https://www.youtube.com/watch?t=1&v=Q93JsQ8vcwY&ab_channel=Amigoscode)
 
-Skim these articles
+Skim this article:
 
-- [Java Lambda Expression](https://www.javatpoint.com/java-lambda-expressions)
-- [Java Streams](https://stackify.com/streams-guide-java-8/)
+- [Functional programming](../../toolbox/java/functional-programming/)
 
 ### In-class exercises
 
-- [Exercise for day 1: Streams and Date-Time API](./exercises/day-1.md)
+- [Lamdas and Streams](./exercises/day-1-lambdas.md)
+- [Streams](./exercises/day-1-streams.md)
+- [Java Time API](./exercises/day-1-datetimeapi.md)
 
 ## Wednesday (CodeLab)
 
@@ -55,7 +60,6 @@ CodeLab exercises on Java Streams, Java Time API, and Lambdas. All day is devote
 
 Watch these videos - and code along:
 
-- [Functional programming (9:17)](https://www.youtube.com/watch?t=1&v=dAPL7MQGjyM&ab_channel=HiteshChoudhary)
 - [Generics in Java (17:33)](https://www.youtube.com/watch?t=1&v=K1iu1kXkVoA&ab_channel=CodingwithJohn)
 
 Skim this article:
@@ -64,7 +68,7 @@ Skim this article:
 
 ### In-class exercises
 
-- [Exercise for day 2: Functional programming](./exercises/day-2.md)
+- [Java Generics](./exercises/)
 
 ## Friday (exercise day)
 

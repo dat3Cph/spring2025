@@ -1,12 +1,12 @@
 ---
-title: Day 2 Hints
+title: Day 1 Hints
 description: Exercise Hints for day 2
 layout: default
 nav_order: 4
 parent: Exercises
 grand_parent: Java Deep Dive I
 nav_exclude: true
-permalink: /deepdive-1/exercises/day-2-hints/
+permalink: /deepdive-1/exercises/day-1-hints/
 ---
 
 # Exercise hints for Java Deep Dive I week

@@ -2,7 +2,7 @@
 title: JPA Part 2
 description: JPA Overview
 layout: default
-nav_order: 4
+nav_order: 5
 has_children: true
 permalink: /jpa-part2
 ---

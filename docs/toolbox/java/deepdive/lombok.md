@@ -5,6 +5,7 @@ layout: default
 nav_order: 11
 parent: Java
 grand_parent: Toolbox
+nav_exclude: true
 permalink: /toolbox/java/lombok/
 ---
 
