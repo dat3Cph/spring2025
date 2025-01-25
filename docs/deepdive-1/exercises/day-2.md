@@ -5,6 +5,7 @@ layout: default
 nav_order: 3
 parent: Exercises
 grand_parent: Java Deep Dive I
+nav_exclude: true
 permalink: /deepdive-1/exercises/day-2
 ---
 
