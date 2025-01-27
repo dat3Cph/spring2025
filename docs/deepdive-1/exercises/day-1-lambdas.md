@@ -8,7 +8,7 @@ grand_parent: Java Deep Dive I
 permalink: /deepdive-1/exercises/lamdas-streams/
 ---
 
-# Exercises for Introducing Lambdas in Java
+# Exercises for Introducing Lambdas and streams in Java
 
 These exercises are designed to gradually introduce students to **lambdas** in Java, starting from the basics and progressing to more practical use cases like the Streams API and functional interfaces.
 
@@ -151,6 +151,8 @@ public class Main {
 
 **Goal**: Replace `...` with a lambda that sorts the words by length.
 
+[Hints for soring with lambdas](https://www.baeldung.com/java-8-sort-lambda)
+
 ---
 
 ### **Exercise 7: Map and Transform**
@@ -177,6 +179,8 @@ public class Main {
 
 **Goal**: Replace `...` with a lambda that calculates the square of each number.
 
+[Hint: map](../../toolbox/java/deepdive/map_and_filter.md#map)
+
 ---
 
 ### **Exercise 8: Combine `filter` and `map`**
@@ -201,6 +205,8 @@ public class Main {
     }
 }
 ```
+
+[Hint: filter](../../toolbox/java/deepdive/map_and_filter.md#filter)
 
 **Goal**: Replace `...` in `filter` and `map` with appropriate lambdas.
 
