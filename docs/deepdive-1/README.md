@@ -25,7 +25,8 @@ We don't have any activities on this first Monday, but you should prepare for th
 
 Wathch this video to get an overview of the week:
 
-- [Introduction to this week]()
+- [Introduction to this week - lecture]()
+- [Lecture notes](./images/javadeepdive_1.png)
 
 ## Tuesday (class)
 
