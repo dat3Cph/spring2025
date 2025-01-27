@@ -35,6 +35,7 @@ Watch these videos - and code along:
 
 - [Lambda basics (13:04)](https://www.youtube.com/watch?t=1&v=tj5sLSFjVj4&ab_channel=CodingwithJohn)
 - [Java Streams (19:12)](https://www.youtube.com/watch?t=1&v=Q93JsQ8vcwY&ab_channel=Amigoscode)
+- [Java Date Time API (11:14)](https://www.youtube.com/watch?v=0XgdX5hDL4U)
 
 Skim this article:
 
@@ -64,10 +65,11 @@ Watch these videos - and code along:
 
 Skim this article:
 
-- [Java Generics](https://www.baeldung.com/java-generics)
+- [Java Generics](../../toolbox/java/generics/)
 
 ### In-class exercises
 
+- Catch up on any exercises and topics as needed
 - [Java Generics](./exercises/)
 
 ## Friday (exercise day)
