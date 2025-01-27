@@ -25,7 +25,7 @@ We don't have any activities on this first Monday, but you should prepare for th
 
 Wathch this video to get an overview of the week:
 
-- [Introduction to this week - lecture]()
+- [Introduction to this week - lecture (13:45)](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=84e5dd66-2ce6-47f6-8fa4-b27200e264ba)
 - [Lecture notes](./images/javadeepdive_1.png)
 
 ## Tuesday (class)
@@ -34,6 +34,7 @@ Wathch this video to get an overview of the week:
 
 Watch these videos - and code along:
 
+- [What are functions? (14:24)](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=fb74ddae-2405-40ce-b342-b27200e25c54)
 - [Lambda basics (13:04)](https://www.youtube.com/watch?t=1&v=tj5sLSFjVj4&ab_channel=CodingwithJohn)
 - [Java Streams (19:12)](https://www.youtube.com/watch?t=1&v=Q93JsQ8vcwY&ab_channel=Amigoscode)
 - [Java Date Time API (11:14)](https://www.youtube.com/watch?v=0XgdX5hDL4U)
