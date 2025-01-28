@@ -26,9 +26,11 @@ This CodeLab exercise is designed to help you practice the concepts you have lea
 
 ### 2. Setup the development environment (one per team)
 
-1. One team member should fork [Flight data Repo](https://github.com/dat3Cph/flightapp) onto their own Github account. **Flight data Repo** is a simple application that reads a CSV file with flight data and calculates the total flight time for each airline.
+1. One team member should fork [Flight data Repo](https://github.com/dat3Cph/flightapp) onto their own Github account. The **Flight data Repo** is a simple application that reads a CSV file with flight data and calculates the total flight time for each airline.
 2. Add the other team member as collaborators to the forked repository
-3. The other team member should clone the forked repository to their local machine
+3. Both team members should clone the forked repository to their local machine
+4. Open the project in IntelliJ IDEA
+5. Make sure that the project builds and runs without errors. If you have issues, make sure that all Maven dependencies are downloaded and that the project SDK is set to Java 17
 
 ### 3. Get aqainted with the code
 
