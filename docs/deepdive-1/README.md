@@ -67,7 +67,7 @@ Watch these videos - and code along:
 
 Skim this article:
 
-- [Java Generics](../../toolbox/java/generics/)
+- [Java Generics](../../toolbox/java/deepdive/generics.md)
 
 ### In-class exercises
 
