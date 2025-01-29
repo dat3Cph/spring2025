@@ -72,7 +72,7 @@ Skim this article:
 ### In-class exercises
 
 - Catch up on any exercises and topics as needed
-- [Java Generics](./exercises/)
+- [Java Generics](./exercises/day-2.md)
 
 ## Friday (exercise day)
 
