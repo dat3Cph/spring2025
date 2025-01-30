@@ -76,7 +76,7 @@ Skim this article:
 
 ## Friday (exercise day)
 
-- [Friday bonus exercise](./exercises/day-3.md)
+- [Friday bonus exercise](./exercises/friday.md)
 
 <hr>
 
