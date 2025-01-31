@@ -32,14 +32,12 @@ permalink: /jpa-part-1
 - [What is ORM?](https://www.freecodecamp.org/news/what-is-an-orm-the-meaning-of-object-relational-mapping-database-tools/)
 - [What is JPA?](https://www.infoworld.com/article/2259807/what-is-jpa-introduction-to-the-java-persistence-api.html)
 
-#### Video
-
 #### Exercises in class
 
-- [Lombok (In Class Exercise)](./lombok)
-- [Points Exercise (In Class Exercise)](./points)
-- [Unicorns JPA CRUD](./unicorn)
-- [Unicorn Snippets](./unicorn_snippets)
+- [Lombok (In Class Exercise)](./exercises/LombokExercise.md)
+- [Points Exercise (In Class Exercise)](./exercises/PointsExercise.md)
+- [Unicorns JPA CRUD](./exercises/UnicornExercise.md)
+- [Unicorn Snippets](./exercises/UnicornSnippets.md)
 
 ## Wednesday (CodeLab)
 
