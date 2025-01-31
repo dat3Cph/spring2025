@@ -34,16 +34,16 @@ permalink: /jpa-part-1
 
 #### Exercises in class
 
-- [Lombok (In Class Exercise)](./exercises/LombokExercise.md)
-- [Points Exercise (In Class Exercise)](./exercises/PointsExercise.md)
-- [Unicorns JPA CRUD](./exercises/UnicornExercise.md)
+- [Getting to know Lombok](./exercises/LombokExercise.md)
+- [Points Exercise](./exercises/PointsExercise.md)
+- [Unicorn JPA CRUD](./exercises/UnicornExercise.md)
 - [Unicorn Snippets](./exercises/UnicornSnippets.md)
 
 ## Wednesday (CodeLab)
 
 CodeLab exercises on JPA. All day is devoted to pair programming.
 
-- [CodeLabExercise](./exercises/codelab.md)
+- [CodeLab](./exercises/codelab.md)
 
 ## Thursday (class)
 
@@ -56,13 +56,13 @@ CodeLab exercises on JPA. All day is devoted to pair programming.
 
 #### Video
 
-- [Java annotations](https://www.youtube.com/watch?v=DkZr7_c9ry8&t=1s)
+- [Java annotations](https://www.youtube.com/watch?v=DkZr7_c9ry8&t=1s). Get an introduction to Java annotations to get a better understanding of what on earth a annotation is.
 
 #### Exercises in class
 
-- [JPQL (In Class Exercise)](./exercises/JpqlExercise.md)
-- [Student DB CRUD](./exercises/StudentExercise.md)
-- [JPA Lifecycle Annotations Exercise](./exercises/JpaLifecycleAndAnnotationExercise.md)
+- [JPQL](./exercises/JpqlExercise.md)
+- [Student DB CRUD and JPQL](./exercises/StudentExercise.md)
+- [JPA Lifecycle Annotations](./exercises/JpaLifecycleAndAnnotationExercise.md)
 
 ## Friday (exercise day)
 
@@ -75,5 +75,4 @@ CodeLab exercises on JPA. All day is devoted to pair programming.
 - [JPA Annotations](../toolbox/java/orm/jpa_annotations.md)
 - [JPA CRUD examples](../toolbox/java/orm/jpa_crud_example.md)
 - [JPA JPQL queries](../toolbox/java/orm/jpa_jpql.md)
-
 - [Extra Resources](./Resources.md)
