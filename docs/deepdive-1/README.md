@@ -41,7 +41,7 @@ Watch these videos - and code along:
 
 Skim this article:
 
-- [Functional programming](../../toolbox/java/deepdive/functionalprogramming.md)
+- [Functional programming](../toolbox/java/deepdive/functional_programming.md)
 
 ### In-class exercises
 

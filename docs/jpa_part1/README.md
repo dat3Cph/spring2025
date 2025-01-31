@@ -34,11 +34,16 @@ permalink: /jpa-part-1
 
 #### Video
 
-- [Hibernate & JPA Tutorial - Crash Course](https://www.youtube.com/watch?v=xHminZ9Dxm4)
+#### Exercises in class
+
+- [Lombok (In Class Exercise)](./lombok)
+- [Points Exercise (In Class Exercise)](./points)
+- [Unicorns JPA CRUD](./unicorn)
+- [Unicorn Snippets](./unicorn_snippets)
 
 ## Wednesday (CodeLab)
 
-CodeLab exercises on JPA. All day is devoted to pair programming and Github collaboration.
+CodeLab exercises on JPA. All day is devoted to pair programming.
 
 - [CodeLabExercise](./exercises/codelab.md)
 
@@ -55,11 +60,22 @@ CodeLab exercises on JPA. All day is devoted to pair programming and Github coll
 
 - [Java annotations](https://www.youtube.com/watch?v=DkZr7_c9ry8&t=1s)
 
+#### Exercises in class
+
+- [JPQL (In Class Exercise)](./jpqlqueries)
+- [Student DB CRUD](./student)
+- [JPA Lifecycle Annotations Exercise](./jpalifecycleannotations)
+
 ## Friday (exercise day)
 
-### Slides
+- [GLS Part 1](./gls_part1.md)
 
-- [ORM-JPA Basics](https://efif-my.sharepoint.com/:p:/g/personal/jorg_cphbusiness_dk/EZVvVZzWXOhLqERgtCMPNeMBoMdShTCo9BSSaOi_Jwttow?e=ghoiPK)
-- [Entity Manager](https://efif-my.sharepoint.com/:p:/g/personal/jorg_cphbusiness_dk/EeTY-AmDezNHiDW5V0oPfh4B6cqIeShqbNvWKgaQjsw3kQ?e=jJ2YRB)
-- [JPQL](https://efif-my.sharepoint.com/:p:/g/personal/jorg_cphbusiness_dk/EUaB0Y-6_o9NvqB9lCsCsPMBCEWwAfe7OC067v7jTy5L9w?e=Ujd1dE)
-- [JPA](https://efif-my.sharepoint.com/:p:/g/personal/jorg_cphbusiness_dk/EfOh_VOMLbNKjt6_QfMWe-4BlheSGiOtDzMCwweWwHk2yA?e=dcCv55)
+### Resources
+
+- [EntityManager](../toolbox/java/orm/jpa_entity_manager.md)
+- [JPA setup in IntelliJ](../toolbox/java/orm/jpa_setup.md)
+- [JPA Annotations](../toolbox/java/orm/jpa_annotations.md)
+- [JPA CRUD examples](../toolbox/java/orm/jpa_crud_example.md)
+- [JPA JPQL queries](../toolbox/java/orm/jpa_jpql.md)
+
+- [Extra Resources](./Resources.md)
