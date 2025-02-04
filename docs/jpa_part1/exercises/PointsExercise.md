@@ -36,8 +36,8 @@ Lombok will also be used to reduce boilerplate code. PostgresSQL and PgAdmin wil
 9. Create a new class called Main and add a main method to it
 10. Add the following code to the main method:
 
-```java
-    EntityManagerFactory emf = HibernateConfig.getEntityManagerFactoryConfig();
+    ```java
+    EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory();
     EntityManager em = emf.createEntityManager();
 
         // Store 1000 Point objects in the database:
@@ -67,17 +67,17 @@ Lombok will also be used to reduce boilerplate code. PostgresSQL and PgAdmin wil
         em.close();
         emf.close();
     }
-```
+    ```
 
 11. Run the code and verify that it works. Check either in PgAdmin or in IntelliJ's database tool that the data is actually stored in the database.
-12. Create a DAO class and transfer all methods that interact with the database to this class.
-13. Make each of the methods in the DAO class return a value instead of printing it to the console, or it's going to be difficult to test them. You do need to test the persistence of the data though.
+12. Create a `DAO` class and transfer all methods that interact with the database to this class. Read more about the [DAO pattern here](../../toolbox/java/orm/orm_wikipedia.md#4-data-access-object-dao-architecture).
+13. Make each of the methods in the `DAO` class return a value instead of printing it to the console, or it's going to be difficult to test them. You do need to test the persistence of the data though.
     - The method that retrieves all Points for example should return a list of all the points from the database.
-13. Add tests for each method in the DAO class. Use the `@BeforeAll` and `@AfterAll` annotations to set up and close the EntityManagerFactory and EntityManager objects.
+13. Add tests for each method in the `DAO` class. Use the `@BeforeAll` and `@AfterAll` annotations to set up and close the `EntityManagerFactory` and `EntityManager` objects.
 
 ## Conclusion
 
-By completing this exercise, you've laid the foundation for building more complex applications that involve database interactions.
-You've learned how to organize code by separating database operations into a DAO (Data Access Object) class, enhancing code modularity
-and testability. Remember that this exercise only scratches the surface of what JPA and Hibernate can offer, and you can build upon this
-knowledge to create sophisticated and efficient data-driven applications.
+- By completing this exercise, you've laid the foundation for building more complex applications that involve database interactions.
+- You've learned how to organize code by separating database operations into a `DAO` (Data Access Object) class, enhancing code modularity
+and testability.
+- Remember that this exercise only scratches the surface of what JPA and Hibernate can offer, and you can build upon this knowledge to create sophisticated and efficient data-driven applications.
