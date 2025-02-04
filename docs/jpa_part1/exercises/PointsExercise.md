@@ -21,7 +21,7 @@ Lombok will also be used to reduce boilerplate code. PostgresSQL and PgAdmin wil
 
 ## Exercise
 
-1. Create a new JPA project. Use this [tutorial](../../toolbox/java/orm/JPASetup.md)
+1. Create a new JPA project. Use this [tutorial](../../toolbox/java/orm/jpa_setup.md)
 2. Create a new database called `points`
 3. Update the Hibernate config file with the correct database name
 4. Create a new entity called `Point` with the following fields:
