@@ -31,7 +31,7 @@ For Maven, add the following to your `pom.xml`:
 <dependency>
     <groupId>org.projectlombok</groupId>
     <artifactId>lombok</artifactId>
-    <version>1.18.20</version> <!-- You can check for the latest version on Maven Central -->
+    <version>1.18.36</version> <!-- You can check for the latest version on Maven Central -->
     <scope>provided</scope>
 </dependency>
 ```

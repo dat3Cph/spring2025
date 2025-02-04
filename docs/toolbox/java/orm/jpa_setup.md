@@ -33,14 +33,14 @@ permalink: /toolbox/orm/jpa-setup/
 
 5. Open the pom.xml file and add the following dependencies:
 
-```XML
+```xml
  <dependencies>
         <!--  DB    -->
 
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.6.0</version>
+            <version>42.7.5</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate.orm</groupId>
@@ -53,7 +53,7 @@ permalink: /toolbox/orm/jpa-setup/
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.28</version>
+            <version>1.18.36</version>
             <scope>provided</scope>
         </dependency>
 
@@ -86,8 +86,8 @@ permalink: /toolbox/orm/jpa-setup/
 
 ```xml
 
-    <hibernate-version>6.2.4.Final</hibernate-version>
-    <junit.version>5.9.1</junit.version>
+    <hibernate-version>6.6.6.Final</hibernate-version>
+    <junit.version>5.11.4</junit.version>
 ```
 
 ---
@@ -96,7 +96,7 @@ permalink: /toolbox/orm/jpa-setup/
 
 ![HibernateConfig](./images/hibernateconfig_2.png)
 
-## 8. Copy and paste the following [Link](https://gist.github.com/jonbertelsen/aad0bd7e1dcc6ed72d983c23dd2967ac) into the HibernateConfig.class
+## 8. Copy and paste the following [Link](https://gist.github.com/jonbertelsen/3010e760d3c8a35d5b71ef1bcd264401) into the HibernateConfig.class
 
 **If you get an import error, try to run Maven lifecycle "install"**
 

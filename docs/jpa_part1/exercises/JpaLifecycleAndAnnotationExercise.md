@@ -42,23 +42,23 @@ _You can use either the `try-with-resources` or the `finally` block to close the
 
 1. [ ] In all the methods above, write small comments that explains when an object is transient, detached, removed or managed. (See example below)
 
-```JAVA
-    public static void main(String[] args) {
-    // entity is in transient state
-    Student student = new Student("Michelle", "Schmidt", "schmidt@mail.com", 30);
+    ```java
+        public static void main(String[] args) {
+        // entity is in transient state
+        Student student = new Student("Michelle", "Schmidt", "schmidt@mail.com", 30);
 
-    }
-    
-    public static void createStudent(Student student) {
-        try(EntityManager em = emf.createEntityManager()) {
-            em.getTransaction().begin();
-            // entity is in managed state (after persist)
-            em.persist(student);
-            // entity is in detached state after the transaction is committed
-            em.getTransaction().commit();
         }
-    }
-```
+        
+        public static void createStudent(Student student) {
+            try(EntityManager em = emf.createEntityManager()) {
+                em.getTransaction().begin();
+                // entity is in managed state (after persist)
+                em.persist(student);
+                // entity is in detached state after the transaction is committed
+                em.getTransaction().commit();
+            }
+        }
+    ```
 
 1. [ ] Add a `@PrePersist` method to the Student class that verifies that the email address is valid. If the email address is not valid, throw an exception.
 2. [ ] Use the same logic as above but this time in the `@PreUpdate` method.
