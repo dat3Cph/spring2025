@@ -34,6 +34,7 @@ VALUES (1, 'John', 'Doe', 'HR', 50000, 'john.doe@example.com'),
 ```
 
 Create a `Main.class` including a main method.
+
 Create the following JPQL queries:
 
 1. Write a JPQL query to select all employees.

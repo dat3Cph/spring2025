@@ -10,7 +10,7 @@ permalink: /jpa-part-1/exercises/gls-part1/
 
 ## Exercise: GLS Package Tracking System - Part 1
 
-![](../../images/glsbear.png)
+![](../../images/glsbear.png){: style="width:50%" }
 
 ### Scenario
 

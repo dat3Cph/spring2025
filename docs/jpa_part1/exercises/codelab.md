@@ -10,7 +10,7 @@ permalink: /jpa-part-1/exercises/codelab/
 
 # JPA part I - CodeLab Exercise
 
-This CodeLab exercise is designed to help you practice the concepts you have learned in the JPA 1 module on day 1. You will be working on a series of tasks that involve Java Persistence API, with Entities and DAOs. We will also practice [pair programming](../../toolbox/sys/projectmanagement/pairprogramming.md) and collaboration using Github.
+This CodeLab exercise is designed to help you practice the concepts you have learned in the JPA 1 module on day 1. You will be working on a series of tasks that involve Java Persistence API, with Entities and DAOs. We will also practice [pair programming](../../toolbox/sys/projectmanagement/pairprogramming.md) if possible.
 
 ![Pair programming](../../deepdive-1/exercises/images/pairprogramming.gif)
 
@@ -18,24 +18,20 @@ This CodeLab exercise is designed to help you practice the concepts you have lea
 
 ## Instructions
 
-### 1. Team up (2 x 2)
+### 1. Team up with a buddy
 
-1. Team up in pairs of 2
-2. Find another pair to team up with
-3. Create a team of 4 people in Moodle
+- Help each other working together in pairs
 
-### 2. Setup the development environment (one per team of 2 x 2)
+### 2. Setup the development environment (everyone)
 
-1. One team member should create a new github repository and make everybody else collaborators on the repo.
-2. Then create a new maven project with a [Hibernate Config file](https://github.com/HartmannDemoCode/jpademo/blob/main/src/main/java/dk/cphbusiness/persistence/HibernateConfig.java) and the appropriate [pom.xml](https://github.com/HartmannDemoCode/jpademo/blob/main/pom.xml) dependencies for using with JPA.
-3. Create a new branch: `develop` and Protect the `main` branch and the `develop` branch from pushing directly to it. Only allow Pull Requests to merge into these branches.
-4. Every team member should clone the new repository to their local machine
-5. Checkout the develop branch (each member)
+1. Create a new Maven project getting ready for JPA with Hibernate. Use the [JPA setup in IntelliJ](../../toolbox/orm/jpa-setup.md) guide to help you - or use your own starter project / template.
+2. Make sure your `.gitignore` file is set up correctly and then initialize a new Git repository in your project folder. Add and commit your files.
+3. Create a new repository on GitHub, link them up, and push your project to the repository.
 
 ### 3. Connecting to the database
 
-1. Each member should create a database in your docker environment with postgres called `jpademo`.
-2. Set up the HibernateConfig file to connect to the database.
+1. Each person should create a database in your docker environment with Postgres called `jpademo`.
+2. Set up the Hibernate to connect to the database. Use the `config.properties` file to store the database name - and credentials.
 3. Create a new Entity class called `Person` with the following fields:
    - id (int)
    - name (String)
@@ -50,7 +46,7 @@ This CodeLab exercise is designed to help you practice the concepts you have lea
 
 You are going to create a new student management system. We need to be able to persist data about students and their courses.
 We need to have information about each student such as their name, phone number, email, address, status, date of birth, date of enrollment and whatever you think is relevant. We also need to have information about the courses they are taking such as the name of the course, the teacher, the semester, the classroom, the time of the course and whatever you think is relevant.
-Since we have not yet learned how to create relationships/references between entities, you can choose to just store the id of the courses in the student entity for now (we will learn how to do it the right way in JPA week 2).
+Since we have not yet learned how to create relationships/references between entities, you can choose to just store the id of the courses in the student entity for now (we will learn how to do it the right way in **JPA week 2**).
 
 ### 5. Identify tasks, break them down and assign to pair programmers as Issues in Github
 
@@ -70,21 +66,15 @@ The following tasks are suggestions for the first round of tasks. You can add mo
 
 ### 6. Start working on the tasks (round 1)
 
-1. Create a branch off the `develop` branch for each task
+1. Create a feature branch off the `main` branch for each task
 2. Work on the tasks in pairs
 
-### 7. Pull request
+### 7. Merge your feature branch in to the `main` branch
 
-1. Create a Pull Request to merge the task branch into the `develop` branch
-2. Assign the Pull Request to the other pair for review
+1. After completing the task, add, commit, and push your changes to the repository
+2. Switch to the main branch - and merge the latest changes from the feature branch.
 
-### 8. Review ([description of how to conduct code reviews using pull requests](../../toolbox/sys/projectmanagement/codereviews.md))
-
-1. Review the Pull Request
-2. Provide feedback
-3. Merge the Pull Request and delete the branch
-
-### 9. Repeat
+### 8. Repeat
 
 1. Identify the next tasks
-2. Repeat steps 5-8 for the next tasks
+2. Repeat steps 6-7 for the next tasks

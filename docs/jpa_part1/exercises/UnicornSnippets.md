@@ -55,7 +55,7 @@ import jakarta.persistence.*;
 public class UnicornDAO
 {
 
-    private EntityManagerFactory emf = HibernateConfig.getEntityManagerFactoryConfig();
+    private EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory();
 
     public Unicorn save(Unicorn unicorn)
     {

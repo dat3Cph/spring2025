@@ -12,7 +12,7 @@ permalink: /jpa-part-1/exercises/unicorn/
 
 ## Check pantopto videos with solutions
 
-[Folder with videos](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=8bab5bee-ab23-48a4-b037-b0650179a4c0)
+[Folder with videos](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=8bab5bee-ab23-48a4-b037-b0650179a4c0). The solution migth differ from the way we setup HibernateConfig in this semester. So be aware of that.
 
 ## Objective
 
@@ -25,7 +25,7 @@ Create a Java application that uses Java Persistence API (JPA) with Hibernate to
 3. A relational database (PostgreSQL).
 4. Maven for dependency management.
 
-![Alt text](../../images/unicorn.png)
+![Alt text](../../images/unicorn.png){: style="width:50%" }
 
 ## Steps
 

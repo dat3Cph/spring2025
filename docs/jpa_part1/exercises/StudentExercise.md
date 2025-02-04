@@ -28,11 +28,10 @@ Objective: Apply JPA annotations to map Java classes to database tables and unde
     - You can use either the `try-with-resources` or the `finally` block to close the objects.
 7. In all the methods above, write small comments that explains when an object is transient, detached, removed or managed. (See example below)
 
-```JAVA
+    ```java
     public static void main(String[] args) {
     // entity is in transient state
     Student student = new Student("Michelle", "Schmidt", "schmidt@mail.com", 30);
-
     }
     
     public static void createStudent(Student student) {
@@ -44,7 +43,7 @@ Objective: Apply JPA annotations to map Java classes to database tables and unde
             em.getTransaction().commit();
         }
     }
-```
+    ```
 
 8. Create a method in the Student class that verifies that the email address is valid. The method should return a boolean value.
 9. Add a `@PrePersist` method to the Student class that verifies that the email address is valid. If the email address is not valid, throw an exception.
