@@ -24,7 +24,7 @@ This CodeLab exercise is designed to help you practice the concepts you have lea
 
 ### 2. Setup the development environment (everyone)
 
-1. Create a new Maven project getting ready for JPA with Hibernate. Use the [JPA setup in IntelliJ](../../toolbox/orm/jpa-setup.md) guide to help you - or use your own starter project / template.
+1. Create a new Maven project getting ready for JPA with Hibernate. Use the [JPA setup in IntelliJ](../../toolbox/java/orm/jpa_setup.md) guide to help you - or use your own starter project / template.
 2. Make sure your `.gitignore` file is set up correctly and then initialize a new Git repository in your project folder. Add and commit your files.
 3. Create a new repository on GitHub, link them up, and push your project to the repository.
 
