@@ -77,6 +77,7 @@ permalink: /toolbox/orm/jpa-setup/
 6. Add the following lines into the properties tag
 
     ```xml
+    <lombok.version>1.18.36</lombok.version>
     <hibernate-version>6.6.6.Final</hibernate-version>
     <junit.version>5.11.4</junit.version>
     <postgres.version>42.7.5</postgres.version>
@@ -146,3 +147,7 @@ permalink: /toolbox/orm/jpa-setup/
     DB_USERNAME=postgres
     DB_PASSWORD=postgres
     ```
+
+10. Add a proper .gitignore file:
+
+    - [https://gist.github.com/jonbertelsen/48bfceee0efa71eacc2c87773aa0d4d7](https://gist.github.com/jonbertelsen/48bfceee0efa71eacc2c87773aa0d4d7)
