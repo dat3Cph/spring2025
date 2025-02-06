@@ -4,7 +4,7 @@ description: How to use Gherkin syntax for writing test cases
 layout: default
 parent: Test
 grand_parent: Toolbox
-nav_order: 3
+nav_order: 4
 permalink: /toolbox/test/gherkin-syntax
 ---
 

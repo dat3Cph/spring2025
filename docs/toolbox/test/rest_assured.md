@@ -4,7 +4,7 @@ description: Rest Assured Overview
 layout: default
 parent: Test
 grand_parent: Toolbox
-nav_order: 2
+nav_order: 3
 permalink: /toolbox/test/rest-assured
 ---
 
