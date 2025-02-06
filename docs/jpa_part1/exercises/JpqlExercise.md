@@ -13,7 +13,7 @@ permalink: /jpa-part-1/exercises/jpqlqueries/
 1. Create a new Java project using Maven.
 2. Create `Employee` entity with the following attributes: `id`, `firstName`, `lastName`, `email`, `salary`
    and `department`.
-3. Use JPA annotations to map the entity class to a database table named `employees`.
+3. Use JPA annotations to map the entity class to a database table named `employees`. You might want to create a database first, called `jpql_demo`.
 4. Add a constraint to the `email` attribute to ensure that the email address is unique.
 5. Include appropriate annotations such as `@Entity`, `@Table`, `@Id`, `@GeneratedValue`, and `@Column` to define the
    primary key and attributes mapping.
@@ -35,7 +35,7 @@ VALUES (1, 'John', 'Doe', 'HR', 50000, 'john.doe@example.com'),
 
 Create a `Main.class` including a main method.
 
-Create the following JPQL queries:
+Create the following JPQL queries in a EmployeeDAO class (1):
 
 1. Write a JPQL query to select all employees.
 2. Write a JPQL query to select employees with a salary greater than a certain value.
@@ -45,3 +45,5 @@ Create the following JPQL queries:
 6. Write a JPQL query to update the department of an employee using positional parameters.
 7. Write a JPQL query to calculate the average salary of all employees.
 8. Write a JPQL query to calculate the total salary of all employees.
+
+(1) You might want to create a `EmployeeDAO` class with a method for each query. And even apply the [singleton pattern](../../toolbox/designpatterns/singleton.md) to the `EmployeeDAO` class to ensure only one instance is created.

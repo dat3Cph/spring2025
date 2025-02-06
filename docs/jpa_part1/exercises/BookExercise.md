@@ -87,7 +87,7 @@ permalink: /jpa-part-1/exercises/books/
    - Hint: Use the `ISBNValidator` class from the [ISBN validation exercise](../../toolbox/java/orm/jpa_isbn_validation.md)
 
 8. **Create a Test Class**
-   - Add a test class that contains a **test method for each CRUD operation**.
+   - Add a test class that contains a **test method for each CRUD operation**. It's not an integration test, but just a sort of `main` method that calls each method in the `BookDAO` class.
 
 9. **Populate the Database with Books**
    - Add 10 books to the database
