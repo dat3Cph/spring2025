@@ -28,7 +28,7 @@ This CodeLab exercise is designed to help you practice the concepts you have lea
 2. Make sure your `.gitignore` file is set up correctly and then initialize a new Git repository in your project folder. Add and commit your files.
 3. Create a new repository on GitHub, link them up, and push your project to the repository.
 
-### 3. Connecting to the database
+### 3. Connecting to the database (warm up)
 
 1. Each person should create a database in your docker environment with Postgres called `jpademo`.
 2. Set up the Hibernate to connect to the database. Use the `config.properties` file to store the database name - and credentials.
@@ -38,7 +38,7 @@ This CodeLab exercise is designed to help you practice the concepts you have lea
    - age (int)
 4. Create a new DAO class called `PersonDAO` with the following methods:
 
-- `createPerson(Person person)`
+   - `createPerson(Person person)`
 
 5. Create a new Main class and test that you can add a new person to your database.
 

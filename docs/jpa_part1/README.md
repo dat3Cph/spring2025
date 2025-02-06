@@ -61,8 +61,7 @@ CodeLab exercises on JPA. All day is devoted to pair programming.
 #### Exercises in class
 
 - [JPQL](./exercises/JpqlExercise.md)
-- [Student DB CRUD and JPQL](./exercises/StudentExercise.md)
-- [JPA Lifecycle Annotations](./exercises/JpaLifecycleAndAnnotationExercise.md)
+- [Books DB CRUD and JPQL](./exercises/BookExercise.md)
 
 ## Friday (exercise day)
 
