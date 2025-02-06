@@ -118,3 +118,7 @@ permalink: /jpa-part-1/exercises/books/
 6. What is the difference between `TypedQuery` and `Query`?
 7. What is the difference between `getSingleResult()` and `getResultList()`?
 8. What are the **different states** of an entity in JPA?
+
+## Remember: Always add your entity classes to the HibernateConfig
+
+![HDJ - Her dumper jeg](./images/hdj.png){: style="margin:auto; display:block; width:25%"}

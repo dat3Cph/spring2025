@@ -17,7 +17,8 @@ permalink: /jpa-part-1/exercises/jpqlqueries/
 4. Add a constraint to the `email` attribute to ensure that the email address is unique.
 5. Include appropriate annotations such as `@Entity`, `@Table`, `@Id`, `@GeneratedValue`, and `@Column` to define the
    primary key and attributes mapping.
-6. Use the `Insert` SQL query below to add some data to the `employees` table.
+7. Run your code and verify that the table is created in the database. If not, you might need to check your `HibernateConfig` class to see if you have added your entity class.
+8. Use the `Insert` SQL query below to add some data to the `employees` table.
 
 ```sql
 INSERT INTO employee (id, firstName, lastName, department, salary, email)
@@ -47,3 +48,7 @@ Create the following JPQL queries in a EmployeeDAO class (1):
 8. Write a JPQL query to calculate the total salary of all employees.
 
 (1) You might want to create a `EmployeeDAO` class with a method for each query. And even apply the [singleton pattern](../../toolbox/designpatterns/singleton.md) to the `EmployeeDAO` class to ensure only one instance is created.
+
+## Remember: Always add your entity classes to the HibernateConfig
+
+![HDJ - Her dumper jeg](./images/hdj.png){: style="margin:auto; display:block; width:25%"}
