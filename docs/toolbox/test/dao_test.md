@@ -18,6 +18,8 @@ The project is setup in accordance with the [JPA setup guidelines](../java/orm/j
 
 You are welcome to follow this guided video tutorial - which contains a run-through of what comes below:
 
+- [Integration Test of your DAO methods](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=5129a2f6-b744-4441-a7fc-b27d00b314ae)
+
 ## 1. Update your `pom.xml` file
 
 The integration tests relies on a number of dependencies:
