@@ -13,10 +13,9 @@ permalink: /jpa-part-2/resources
 
 ## Theory and examples
 
-- [CRUD examples with a single entity](../toolbox/java/crud/)
-- [The role of the entity manager in JPA](..//toolbox/orm/entity-manager/)
+- [CRUD examples with a single entity](../toolbox/java/orm/jpa_crud_example.md)
+- [The role of the entity manager in JPA](../toolbox/java/orm/jpa_entity_manager.md)
 - [ORM Wiki](../toolbox/orm/orm-wikipedia/)
-- [JPA documentation in brief](../toolbox/java/orm/)
 
 ## Videos external resources
 
@@ -59,15 +58,10 @@ permalink: /jpa-part-2/resources
 
 ### Testcontainers
 
+- [Setting up DAO test with test containers](../toolbox/test/dao_test.md)
 - [How to use testcontainers](https://thorben-janssen.com/hibernate-testcontainers-a-perfect-match-for-your-tests/)
 
 ### Other
 
 - [Ultimate Guide to Implementing equals() and hashCode() with Hibernate](https://thorben-janssen.com/ultimate-guide-to-implementing-equals-and-hashcode-with-hibernate/#the-hashcode-contract)
 - [Date and Time Mappings with Hibernate and JPA](https://thorben-janssen.com/hibernate-jpa-date-and-time/)
-
-### Code Snippets
-
-- [Test dependencies](https://gist.github.com/tysker/312d237728d58c84533aae6cad661307)
-- [Hibernate Config file Part 1](https://gist.github.com/tysker/7acb26d9bfeeba46a2d2fd4b513fa8c0)
-- [Testcontainer Hibernate config file](https://gist.github.com/tysker/7acb26d9bfeeba46a2d2fd4b513fa8c0)

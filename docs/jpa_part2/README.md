@@ -16,6 +16,7 @@ permalink: /jpa-part2
 ## Monday
 
 - Friday exercise review. Prepare a short presentation of your solution to the Friday exercise.
+- Agree among the team members who should present their solution.
 
 ## Tuesday (class)
 
@@ -34,9 +35,14 @@ refers to an IntelliJ template that a student has made. The template contains a 
 
 - [Source Code for the above Video](https://github.com/jonbertelsen/dolphin_fall2023)
 
+### Exercise (in class)
+
+- [Recycling Exercise](./exercises/recycling.md)
+- [Dolphin Notes Exercise](./exercises/dolphin.md)
+
 ## Wednesday (CodeLab)
 
-- [CodeLab exercises on JPA](./exercises/codelab.md). All day is devoted to pair programming and Github collaboration.
+- [CodeLab exercises on JPA](./exercises/codelab.md).
 
 ## Thursday (class)
 
@@ -50,6 +56,10 @@ refers to an IntelliJ template that a student has made. The template contains a 
 #### Reading
 
 - [Many-To-Many](https://www.logicbig.com/tutorials/java-ee-tutorial/jpa/many-to-many.html)
+
+### Exercise (in class)
+
+- [Order System](./exercises/order_system.md)
 
 ## Friday (exercise day)
 
