@@ -30,8 +30,7 @@ permalink: /jpa-part2
 
 #### Video
 
-- [JPA relations](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%226c569295-f604-4241-89e8-b06900ed8d21%22). In the video about 1:1 relations Jon
-refers to an IntelliJ template that a student has made. The template contains a projects setup with HibernateConfig and pom.xml ready made. Fast food for the people ;-) However, the link given in the video is not active anymore. But use [these instructions instead](../toolbox/ides/intellij/custom_templates.md#example-template-for-jpa).
+- [JPA relations first 3 videos](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%226c569295-f604-4241-89e8-b06900ed8d21%22). In the video about 1:1 relations Jon refers to an IntelliJ template that a student has made. The template contains a projects setup with HibernateConfig and pom.xml ready made. Fast food for the people ;-) However, the link given in the video is not active anymore. But use [these instructions instead](../toolbox/ides/intellij/custom_templates.md#example-template-for-jpa), use the one we have done in class - or start from scratch with this [JPA project setup](../toolbox/java/orm/jpa_setup.md).
 
 - [Source Code for the above Video](https://github.com/jonbertelsen/dolphin_fall2023)
 
@@ -50,7 +49,7 @@ refers to an IntelliJ template that a student has made. The template contains a 
 
 #### Video
 
-- [JPA relations](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%226c569295-f604-4241-89e8-b06900ed8d21%22)
+- [JPA relations video 4+5 about many-to-many](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx#folderID=%226c569295-f604-4241-89e8-b06900ed8d21%22)
 - [Source Code for the above Video](https://github.com/jonbertelsen/dolphin_fall2023)
 
 #### Reading

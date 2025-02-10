@@ -9,5 +9,3 @@ has_children: true
 ---
 
 # ORM (JPA) tutorials and guides
-
-Needs to be elaborated upon

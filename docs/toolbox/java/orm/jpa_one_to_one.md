@@ -35,125 +35,231 @@ In JPA (Java Persistence API), a one-to-one association is a type of relationshi
 
 Let's consider an example where we have two entities: `Person` and `Passport`.
 
-### Entity Classes
+We wille be using the `@MapsId` annotation, where a `Person` entity has a **one-to-one** relationship with a `Passport` entity.
+
+### Explanation of `@MapsId`
+
+- The `@MapsId` annotation maps the primary key of the child (`Passport`) to the primary key of the parent (`Person`).
+- This enforces that **both entities share the same primary key**.
+- The `Passport` entity doesn't have its own generated ID but instead **inherits the ID from `Person`**.
+
+Here's the same **JPA One-to-One relationship** using `@MapsId`, but now with **Lombok** to simplify the entities. This reduces boilerplate code by automatically generating constructors, getters, setters, `toString()`, `equals()`, and `hashCode()`.
+
+### **Person.java**
 
 ```java
+import jakarta.persistence.*;
+import lombok.*;
+
 @Entity
+@Table(name = "person")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString(exclude = "passport") // Avoid circular reference in toString()
 public class Person {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "passport_id", referencedColumnName = "id")
+    @OneToOne(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)
     private Passport passport;
 
-    // Getters and setters
-}
+    public Person(String name) {
+        this.name = name;
+    }
 
-@Entity
-public class Passport {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private String passportNumber;
-
-    @OneToOne(mappedBy = "passport")
-    private Person person;
-
-    // Getters and setters
+    public void setPassport(Passport passport) {
+        this.passport = passport;
+        passport.setPerson(this); // Maintain bidirectional relationship
+    }
 }
 ```
 
-## Explanation
+### **Explanation**
 
-1. **Person Entity**:
-   - The `Person` entity has a `passport` field annotated with `@OneToOne`, indicating that each `Person` has one `Passport`.
-   - The `@JoinColumn` specifies the foreign key column (`passport_id`) in the `Person` table that references the primary key of the `Passport` entity.
+1. **JPA Annotations**
+   - `@Entity`: Marks this class as a JPA entity.
+   - `@Table(name = "person")`: Maps this entity to the **person** table in the database.
+   - `@Id`: Marks the `id` field as the **primary key**.
+   - `@GeneratedValue(strategy = GenerationType.IDENTITY)`:
+     - Uses the database's identity column for **automatic primary key generation**.
+     - Suitable for databases like MySQL and PostgreSQL.
+   - `@OneToOne(mappedBy = "person", cascade = CascadeType.ALL, orphanRemoval = true)`:
+     - Declares a **one-to-one** relationship with `Passport`.
+     - `mappedBy = "person"`: The **`person` field** in `Passport` owns the relationship.
+     - `cascade = CascadeType.ALL`: Any operations (persist, remove, merge) on `Person` **cascade to `Passport`**.
+     - `orphanRemoval = true`: If a `Person` loses its `Passport`, the `Passport` **is automatically deleted**.
 
-2. **Passport Entity**:
-   - The `Passport` entity has a `person` field annotated with `@OneToOne(mappedBy = "passport")`. The `mappedBy` attribute specifies that the `Person` entity owns the relationship.
+2. **Lombok Annotations**
+   - `@Getter @Setter`: Automatically generates **getter and setter methods**.
+   - `@NoArgsConstructor`: Generates a **default constructor**.
+   - `@AllArgsConstructor`: Generates a **constructor with all fields**.
+   - `@ToString(exclude = "passport")`: **Prevents infinite recursion** in `toString()` (since `Person` and `Passport` reference each other).
 
-## Database Structure
+3. **Custom `setPassport()` Method**
+   - Ensures **both entities maintain a bidirectional relationship**.
+   - `passport.setPerson(this);` ensures that the `Passport` correctly references its `Person`.
 
-- The `Person` table will have a column named `passport_id`, which stores the reference to the associated `Passport` entity.
+---
 
-## Use Cases
+### **Passport.java**
 
-- One-to-one relationships are commonly used in scenarios where two entities are so closely related that they should be treated as a single entity from a data model perspective, but they still represent different concepts.
+```java
+import jakarta.persistence.*;
+import lombok.*;
 
-By understanding these concepts, you can effectively model and manage one-to-one relationships in JPA, ensuring that your data is accurately represented and managed within your application.
+@Entity
+@Table(name = "passport")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString(exclude = "person") // Avoid circular reference in toString()
+public class Passport {
 
-## The database schema
+    @Id
+    private Long id; // Uses the same ID as the Person entity
 
-In the `Person` - `Passport` example with a one-to-one association in JPA, the database tables would typically look like the following:
+    private String passportNumber;
 
-### 1. **Person Table**
+    @OneToOne
+    @MapsId // Uses the same primary key as Person
+    @JoinColumn(name = "id")
+    private Person person;
 
-The `Person` table will contain all the fields related to the `Person` entity, including a foreign key that references the primary key of the `Passport` table.
+    public Passport(String passportNumber) {
+        this.passportNumber = passportNumber;
+    }
+}
+```
 
-#### **Table Structure: `Person`**
+### **Explanation**
 
-| Column Name   | Data Type    | Constraints                  |
-|---------------|--------------|------------------------------|
-| id            | BIGINT       | PRIMARY KEY, AUTO_INCREMENT  |
-| name          | VARCHAR      | NOT NULL                     |
-| passport_id   | BIGINT       | UNIQUE, FOREIGN KEY          |
+1. **JPA Annotations**
+   - `@Entity`: Marks `Passport` as a JPA entity.
+   - `@Table(name = "passport")`: Maps to the **passport** table.
+   - `@Id private Long id;`: Uses the **same primary key as Person**.
+   - `@OneToOne`:
+     - Defines a **one-to-one** relationship with `Person`.
+   - `@MapsId`: **Maps `id` to the primary key of `Person`**.
+     - `Passport` does **not** have its own ID.
+     - Instead, it **shares the same ID as its `Person`**.
+   - `@JoinColumn(name = "id")`:
+     - Specifies that the `id` column **links to the primary key of Person**.
 
-- **`id`**: The primary key for the `Person` table.
-- **`name`**: A column to store the name of the person.
-- **`passport_id`**: A foreign key column that references the primary key (`id`) in the `Passport` table. This column is also unique because of the one-to-one relationship, ensuring that each `Person` is associated with only one `Passport`.
+2. **Lombok Annotations**
+   - `@Getter @Setter`: Automatically generates **getter and setter methods**.
+   - `@NoArgsConstructor`: Generates a **default constructor**.
+   - `@AllArgsConstructor`: Generates a **constructor with all fields**.
+   - `@ToString(exclude = "person")`: Prevents **infinite recursion** in `toString()`.
 
-### 2. **Passport Table**
+---
 
-The `Passport` table will contain all the fields related to the `Passport` entity.
+## **3. Creating and Persisting Data**
 
-#### **Table Structure: `Passport`**
+### **Main.java**
 
-| Column Name       | Data Type    | Constraints                  |
-|-------------------|--------------|------------------------------|
-| id                | BIGINT       | PRIMARY KEY, AUTO_INCREMENT  |
-| passport_number   | VARCHAR      | NOT NULL                     |
+```java
+public class Main {
+    public static void main(String[] args) {
+      EntityManagerFactory emf = HibernateConfig.createEntityManagerFactory();
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction tx = em.getTransaction();
 
-- **`id`**: The primary key for the `Passport` table.
-- **`passport_number`**: A column to store the passport number.
+        try {
+            tx.begin();
 
-### 3. **Relationship in the Tables**
+            // Create Person
+            Person person = new Person("John Doe");
 
-- **Person Table**:
-  - The `passport_id` column in the `Person` table acts as a foreign key, linking each `Person` to one `Passport`.
-  - The `UNIQUE` constraint on the `passport_id` ensures that no two `Person` records can reference the same `Passport`.
+            // Create Passport
+            Passport passport = new Passport("ABC123456");
 
-- **Passport Table**:
-  - There is no need for a foreign key in the `Passport` table because the `Person` table owns the relationship.
+            // Establish relationship
+            person.setPassport(passport);
 
-### Example of Table Content
+            // Persist Person (Passport will be automatically persisted due to CascadeType.ALL)
+            em.persist(person);
 
-Assume we have the following data in the `Person` and `Passport` entities:
+            tx.commit();
 
-- **Person**: { id: 1, name: "John Doe", passport_id: 101 }
-- **Passport**: { id: 101, passport_number: "X12345678" }
+            // Fetch and print data
+            Person retrievedPerson = em.find(Person.class, person.getId());
+            System.out.println("Person: " + retrievedPerson);
+            System.out.println("Passport Number: " + retrievedPerson.getPassport().getPassportNumber());
 
-#### **Person Table**
+        } catch (Exception e) {
+            if (tx != null && tx.isActive()) {
+                tx.rollback();
+            }
+            e.printStackTrace();
+        } finally {
+            em.close();
+            emf.close();
+        }
+    }
+}
+```
 
-| id | name      | passport_id |
-|----|-----------|-------------|
-|  1 | John Doe  | 101         |
+### **Explanation**
 
-#### **Passport Table**
+1. **EntityManager Setup**
+   - `EntityManagerFactory emf = HibernateConfig.createEntityManagerFactory();`
+   - `EntityManager em = emf.createEntityManager();`
+   - Manages **database operations**.
+
+2. **Transaction Handling**
+   - `tx.begin();`: Starts a new **transaction**.
+   - `tx.commit();`: Commits changes to the database.
+   - If an exception occurs, `tx.rollback();` is executed.
+
+3. **Creating and Persisting Entities**
+   - Creates a `Person` named `"John Doe"`.
+   - Creates a `Passport` with number `"ABC123456"`.
+   - Calls `person.setPassport(passport);` to **establish the relationship**.
+   - Calls `em.persist(person);` to save `Person` (automatically persists `Passport` due to **CascadeType.ALL**).
+
+4. **Retrieving and Printing Data**
+   - Retrieves the `Person` from the database.
+   - Prints `Person` and their **associated `Passport` number**.
+
+---
+
+## **4. Database Schema (Generated by Hibernate)**
+
+The generated schema will look like this:
+
+### **Person Table**
+
+| id  | name     |
+|-----|---------|
+| 1   | John Doe |
+
+### **Passport Table**
 
 | id  | passport_number |
-|-----|-----------------|
-| 101 | X12345678       |
+|-----|----------------|
+| 1   | ABC123456      |
 
-### How They Work Together
+- The **`id` of `passport` is the same as the `id` of `person`** (due to `@MapsId`).
+- This ensures a **One-to-One relationship with shared primary keys**.
 
-- The `Person` table's `passport_id` column references the `id` column in the `Passport` table.
-- This setup allows for a strict one-to-one relationship, where each `Person` is associated with a unique `Passport`, and vice versa.
+---
 
-In this relational database design, the `Person` table holds the foreign key, which is typical when one side of the relationship is considered the owner (in this case, `Person`). This structure ensures the integrity and enforcement of the one-to-one relationship in the database.
+## **Key Takeaways**
+
+1. **One-to-One Relationship**:
+   - `@OneToOne(mappedBy = "person")` in `Person.java`.
+   - `@OneToOne @MapsId` in `Passport.java` to share **the same primary key**.
+
+2. **Cascade & Orphan Removal**:
+   - `CascadeType.ALL`: Automatically saves/deletes the associated `Passport` when `Person` is modified.
+   - `orphanRemoval = true`: If a `Person` is deleted or loses their `Passport`, the `Passport` is also deleted.
+
+3. **Lombok Simplifications**:
+   - `@Getter`, `@Setter`, `@NoArgsConstructor`, `@AllArgsConstructor`, and `@ToString

@@ -50,6 +50,9 @@ public class Department {
     // Getters and setters
 }
 
+```
+
+```java
 @Entity
 public class Employee {
 
