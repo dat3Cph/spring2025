@@ -36,8 +36,8 @@ permalink: /jpa-part2
 
 ### Exercise (in class)
 
-- [Recycling Exercise](./exercises/recycling.md)
 - [Dolphin Notes Exercise](./exercises/dolphin.md)
+- [Recycling Exercise](./exercises/recycling.md) - extra
 
 ## Wednesday (CodeLab)
 

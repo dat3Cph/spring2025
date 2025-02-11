@@ -10,29 +10,30 @@ permalink: part2/exercises/recycling/
 
 # Recycling Exercise
 
-### 1. Create a new JPA project using Maven.
+### 1. Create a new JPA project using Maven
 
-### 2. Use the diagram below to create JPA entities for the database.
+### 2. Create JPA entities for the database
 
+- use diagram below as a reference
 - the two entities should be called `Driver` and `WasteTruck`
-- both entities should be placed in a package called `model`
+- both entities should be placed in a package called `entities`
 - the HibernateConfig class should be placed in a package called `config`
 - for the salary use the type BigDecimal
-- for the date use the type Date and use the annotation @Temporal(TemporalType.DATE)
+- for the date use the type LocalDate
 - the driver constructor should only take the name, surname and salary as a parameter
 - the truck constructor should only take the brand, capacity and registration number as a parameter
 
-![recycling eer](../../images/recycling1.png)
+![recycling erd](../../images/recycling1.png)
 
-### 3. Create a method in the Driver class to generate a String id with the following constrains:
+### 3. Validate the driver id
 
-The id for the driver should be a string with the format `ddMMyy-XX-XXXL`.
+- Create a method in the Driver class to generate a String id with the following constrains
+- The id for the driver should be a string with the format `ddMMyy-XX-XXXL`.
 - `ddMMyy` is the date of employment, (Date: 2023-08-26 -> String: 230826)
 - `XX` is the first letters of the name and of the surname (Name: John Doe -> String: JD)
 - `XXX` is a random number between 100 and 999
 - `L` is the last letter of the surname (Surname: Doe -> String: E)
-
-### 4. Use this method below to validate the id of the Driver class.
+- Use this method below to validate the id of the Driver class
 
 ```java
     public Boolean validateDriverId(String driverId) {
@@ -40,9 +41,11 @@ The id for the driver should be a string with the format `ddMMyy-XX-XXXL`.
     }
 ```
 
-### 5. The driver id and the employment date should be set in a @PrePersist annotated method. 
+- The driver id and the employment date should be set in a @PrePersist annotated method
 
-### 6. Create a new package called `dao` and add two interfaces called `IDriverDAO` and `IWasteTruckDAO` and add the following code to their interface:
+### 5. Create DAO interfaces for the entities
+
+Create a new package called `daos` and add two interfaces called `IDriverDAO` and `IWasteTruckDAO` and add the following code to their interface
 
 ```java
         // Driver
@@ -69,9 +72,13 @@ The id for the driver should be a string with the format `ddMMyy-XX-XXXL`.
         List<WasteTruck> getAllAvailableTrucks();
 ```
 
-### 7. At the same location add a new class called `DriverDAOImpl` and `WasteTruckDAOImpl` and implement the interface to the classes with all their methods.
+### 6. Implement the DAO interfaces
 
-### 8. Use the following sql script to populate data: 
+Create a `daos/impl` package and implementent the interfaces as `DriverDAO` and `WasteTruckDAO` classes
+
+### 7. Populate data
+
+- Use this sql script to populate the database
 
 ```sql
 -- Add 5 rows to the "truck" table
@@ -100,6 +107,12 @@ VALUES
 
 ```
 
-### 9. Create a main method in the root of the project and test all the methods in the DAO classes.
+### 8. Create a main method
 
-### 10. Test the methods in the DAO classes using JUnit.
+In the root of the project, create a `Main` class with a main method that runs a few of your DAO methods to test that they work. Save your time for the next exercise. It's only to get started.
+
+### 9. Create integration tests
+
+This is a big deal. You need to test all the methods in the DAO classes using JUnit.
+
+Use this [integration test tutorial](../../toolbox/test/dao_test.md) to help you get going.

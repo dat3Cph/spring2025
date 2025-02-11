@@ -15,7 +15,7 @@ permalink: part2/exercises/dolphin
 This exercise begins where the tutorial on JPA relations 1:1 and 1:m ends.
 
 - [Video tutorial](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=6c569295-f604-4241-89e8-b06900ed8d21)
-- [Source code for videos](https://github.com/jonbertelsen/dolphin_fall2023). This one can be cloned if you haven't done your own coding along with the tutorial.
+- [Source code for this exercise](https://github.com/jonbertelsen/dolphin_spring2025). This one can be cloned if you haven't done your own coding along with the tutorial.
 
 ## Next step: adding to the data model
 
@@ -54,4 +54,3 @@ Now we got the full attention of the board - and they want more:
 ### Todo (add query and print out table)
 
 1. Implement US-4. Hint: you might want to use what is called a [DTO projection](https://thorben-janssen.com/dto-projections/) to make handling query output easier.
-
