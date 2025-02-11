@@ -40,8 +40,8 @@ This CodeLab exercise is designed to help you practice the concepts you have lea
 
 ### 4. The assignment
 
-You are going to create a simple application for a university. The application should be able to manage students, courses and teachers. This time around we are going to add relationships between the entities. The relationships can be seen in the diagram above.
-Most of the code is already written for you. You need to implement the missing parts. Make sure to use the correct annotations for the relationships and try to understand how the relationships work.
+You are going to create a simple application for a university. The application should be able to manage students, courses and teachers. This time around we are going to add relationships between the entities. The relationships can be seen in the class diagram above.
+You need to implement the entities and DAO methods. Make sure to use the correct annotations for the relationships and try to understand how the relationships work.
 
 **Remember to write integration tests for the DAO classes.**
 
@@ -53,24 +53,31 @@ Ask yourself the following questions before you start implementing the relations
 - What cascade type should be used or should we use them at all? What are the implications?
 - Should we use fetch type eager or lazy and why?
 
-### 5. Identify tasks, break them down and assign to pair programmers as Issues in Github
+### 5. Identify tasks, break them down in small steps
 
-The following tasks are suggestions for the first round of tasks. You can add more tasks as you go along.
+The following tasks are suggestions. You can add more tasks as you go along.
 
-1. Create an Enum for the Course class as shown in the diagram and add the correct annotations to the Course class.
-2. Add the correct annotations to the Teacher class as shown in the diagram.
-3. Add the correct annotations to the Student class as shown in the diagram.
-4. Implement the GenericDAO interface for the CourseDAO class and implement the methods.
-5. Implement the GenericDAO interface for the TeacherDAO class and implement the methods.
-6. Implement the GenericDAO interface for the StudentDAO class and implement the methods.
-7. Add the relations between the entities as shown in the diagram.
-   - a) student can attend many courses
-   - b) a course can have many students
-   - c) course can have only one teacher
-   - d) a teacher can teach many courses
-8. Look at the [DTO](../../toolbox/designpatterns/dto.md) diagram below and implement the methods in the DAO classes to get the data as shown in the diagram.
+1. Create an **Enum** for the Course class as shown in the diagram and add the correct annotations to the Course class.
+2. Create a **Teacher** entity class as shown in the diagram.
+3. Create a **Student** entity class as shown in the diagram.
+4. Create a **Course** entity class as shown in the diagram.
+5. Add the relations between the entities as shown in the diagram.
+      - a) student can attend many courses
+      - b) a course can have many students
+      - c) course can have only one teacher
+      - d) a teacher can teach many courses
+6. Create a generic DAO interface with CRUD methods. Call it `IDAO`.
+7. Implement a CourseDAO class that implements the `IDAO` interface.
+8. Implement a TeacherDAO class that implements the `IDAO` interface.
+9. Implement a StudentDAO class that implements the `IDAO` interface.
 
-![codelab_school_dto](codelab_school_dto.drawio.png)
+10. Implement some integration tests for the DAO classes.
+11. Implement some JPQL queries to get data from the database. Be creative and try to get data from the database in different ways:
+
+      - a) Get all students that are attending a specific course
+      - b) Get all courses that a specific student is attending
+      - c) Get all courses that a specific teacher is teaching
+      - d) Get all students that are attending a course that a specific teacher is teaching
 
 ### 6. Start working on the tasks (round 1)
 
@@ -84,4 +91,4 @@ The following tasks are suggestions for the first round of tasks. You can add mo
 ### 8. Repeat
 
 1. Identify the next tasks
-2. Repeat steps 5-7 for the next tasks
+2. Repeat steps 6-7 for the next tasks
