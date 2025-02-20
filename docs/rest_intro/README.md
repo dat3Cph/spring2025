@@ -74,6 +74,3 @@ permalink: /rest-intro
 
 - [Hotel API](./exercises/hotel_api.md)
 
-
-### Jörg's GitHub Link
-https://github.com/tysker/dog_api_class.git
