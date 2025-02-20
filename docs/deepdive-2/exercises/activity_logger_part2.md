@@ -63,6 +63,7 @@ public class ActivityDTO {
 
 ## The exercise
 
+0. Change your code to use threads and executor service to get the city and weather data into your DTOs
 1. Create a database with JPA and persist the data from the external APIs in the database. You should probably create the entities for `Activity`, `CityInfo` and `WeatherInfo`. Remember to add the Entities to the HibernateConfig file. Think about the relationships between Activity, CityInfo, and WeatherInfo when designing your entities. Consider using one-to-many or one-to-one relationships as needed, and ensure you annotate them properly with JPA annotations like @OneToMany, @ManyToOne, etc.
 2. You should create a ActivityDAO class that can persist the data in the database. Send in the DTO's and let the DAO class persist the data. You might want to return DTO's with the ID's from the database when creating new entries.
 3. Create an `ActivityService` that can call the DAO class and persist the data in the database.
