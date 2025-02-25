@@ -29,13 +29,13 @@ This project is meant to be a group exercise and the scope is 4 working days. Th
 4. You should write DAO CRUD methods for the entities. The DAO methods should be implemented using JPA. You will also need to implement a service layer that uses the DAO methods.
 5. You should write enough tests to cover the functionality of the backend. The tests should be written using JUnit and test containers.
 6. Use as many of the concepts you have learned as possible as functional programming, streams, lambdas, generics, JPA, Lombok etc.
-7. Share the code on Github for each group, and make sure that the code is well documented and that the code is clean and readable.
+7. Share the code on Github for each group, and make sure that the code is well documented and that the code is clean and readable. By well documented, we mean that the code should be self-explanatory and that the code should be commented where necessary and make a nice README.md file.
 
 Below is a suggestion of how you can structure the project. You are free to structure the project as you see fit. Maybe it's a good idea to create a project in Github and then invite your group members to the project. Then you can work on the project together.
 
 ## Day 1
 
-- Find a group to work with and [sign up on Moodle](https://cphbusiness.mrooms.net/mod/choicegroup/view.php?id=731119).
+- Find a group to work with and [sign up on Moodle](https://cphbusiness.mrooms.net/mod/choicegroup/view.php?id=779126).
 - Read the assignment carefully, and make sure you understand the requirements.
 - Sketch a class diagram for the project. Which entities do you need? Which fields should the entities have? Which relationships should the entities have?
 - Do some research on how to fetch the data from the TMDb API. You can use the [TMDB API reference] to get started.
@@ -57,7 +57,7 @@ Below is a suggestion of how you can structure the project. You are free to stru
 
 - Make sure that the code is well documented and that the code is clean and readable.
 - Share the code on Github.
-- Hand in the [assignment on Moodle](https://cphbusiness.mrooms.net/mod/assign/view.php?id=731120) Make sure to include a link to the Github repository. One group member should hand in the assignment per group. NB! You can wait until Sunday evening to hand in the assignment.
+- Hand in the [assignment on Moodle](https://cphbusiness.mrooms.net/mod/assign/view.php?id=779127). Make sure to include a link to the Github repository. One group member should hand in the assignment per group. NB! You can wait until Sunday evening to hand in the assignment.
 
 ## Day 5 (monday of the next week)
 
@@ -69,7 +69,7 @@ The backend should be able to store and retrieve information about movies, genre
 
 We would like to be able to deliver the following functionality:
 
-1. The database should contain all Danish movies from the TMDb API that has been released in the last 5 years. So just recent Danish movies. It would be around 1146 movies in total.
+1. The database should contain all Danish movies from the TMDb API that has been released in the last 5 years. So just recent Danish movies. It would be around 1146 movies in total (give and take a few hundred).
 2. We would like to be able to see a list of all movies pulled from the database.
 3. Each movie has a list of actors and a director. We would like to be able to see a list of all actors and directors as well that have been part of those movies. You need to figure out how to fetch and store the actors and directors in the database. Also, what kind of relationship should there be between the entities?
 4. Each movie has a list of genres. We would like to be able to see a list of all genres as well. Also be able to list all movies within a particular genre. You need to figure out how to fetch and store the genres in the database. Also, what kind of relationship should there be between the entities?
@@ -95,11 +95,13 @@ You are free to choose the data model you find most suitable for the task. You d
 ### 2. **API Key for TMDb**
 
 - You will need an API key from TMDb to fetch movie data. In case you don't have one, you can get one by signing up [here](https://www.themoviedb.org/documentation/api).
-- Rememeber never to push your api key to Github. Instead, you can use environment variables in IntelliJ to store the api key. You can access the environment variable in Java like this:
+- Remember never to push your api key to Github. Instead, you can use environment variables in IntelliJ to store the api key. You can access the environment variable in Java like this:
 
     ```java
     String apiKey = System.getenv("API_KEY");
     ```
+
+Alternatively, you can use a `config.properties` file to store the api key.
 
 ### 3. **Clarify Entity Relationships**
 
@@ -107,7 +109,7 @@ Think about the relationship between movies and actors/directors (one movie can 
 
 ### 4. **API Json Data Structure**
 
-Make sure you review the structure of the TMDb API responses for movies, actors, directors, and genres. You'll need this information to design your DTOs and entity mappings.
+Make sure you review the structure of the TMDb API responses for movies, actors, directors, and genres. You'll need this information to design your DTOs and entity mappings. You will be able to find lot's of endpoints in the [TMDb API documentation](https://developers.themoviedb.org/3/getting-started/introduction). Some are easier to work with than others.
 
 ### 5. **Database Constraints**
 
