@@ -54,9 +54,10 @@ As a computer science student, you've been engaged by a local veterinarian clini
 9. **Error Handling:**
     - Make sure to return 404 when a patient or appointment is not found.
 
-10. **Extras but not optional:**
+10. **Extra:**
     - Implement Javalin's `before()` and `after()`. It could be used to log the requests and responses.
     - Implement attribute() method in your project to add a custom attribute to the context. That attribute could be used somewhere else in the project. <https://javalin.io/documentation#context>
+    - Implement 2 more endpoints for retrieving appointments for the next 7 days and for getting all appointments with a specific veterinarian.
 
 **Business Goals:**
 
