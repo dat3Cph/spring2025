@@ -56,7 +56,7 @@ As a computer science student, you've been engaged by a local veterinarian clini
 
 10. **Extra:**
     - Implement Javalin's `before()` and `after()`. It could be used to log the requests and responses.
-    - Implement attribute() method in your project to add a custom attribute to the context. That attribute could be used somewhere else in the project. <https://javalin.io/documentation#context>
+    - Use the attribute() method of the context object in your project to add a custom attribute to the context. That attribute could be read from the context object in the `after` filter method. E.g for logging details about the response
     - Implement 2 more endpoints for retrieving appointments for the next 7 days and for getting all appointments with a specific veterinarian.
 
 **Business Goals:**
