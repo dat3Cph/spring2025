@@ -30,7 +30,8 @@ Just to get our feet wet with REST APIs and Javalin.
 
 ## 3. Sign up on Moodle
 
-[Create a team of 3-5 people in Moodle](https://cphbusiness.mrooms.net/mod/choicegroup/view.php?id=732839).
+Create a team of 3-5 people to work on this exercise. 
+Remember to sign up on [Moodle](https://cphbusiness.mrooms.net/mod/attendance/manage.php?id=770627) for this exercise.
 This is mainly for the teachers to be able to check attendance, and for you to get study points.
 
 ## 4. Decide on which poem style you want to share through your api?
