@@ -62,11 +62,22 @@ permalink: /rest-intro
 
 - [Logback](https://www.baeldung.com/logback) - skim
 - [Javalin Exception Mapping](https://javalin.io/documentation#exception-mapping)
-- [API documentation](https://www.postman.com/api-platform/api-documentation/) - skim
 - [3rd semester documentation format](https://dat3cph.github.io/material/toolbox/rest/rest-api-documentation)
+- [Rest-assured.io (5 min)](http://rest-assured.io/)
+- [Short Rest Assured Tutorial, read 1-7 (5 min)](https://www.baeldung.com/rest-assured-tutorial)
+- [Hamcrest guide (skim and use for reference 10 min)](https://www.baeldung.com/java-junit-hamcrest-guide)
+
+#### Toolbox
+
+- [Rest-assured overview](../toolbox/test/rest_assured.md)
+- [The Gherkin Syntax](../toolbox/test//gherkin.md)
+- [General Theory about testing](../toolbox/test/testteori.md)
 
 ### Exercises in class
 
+- [Gherkin Syntax](./exercises/gherkin.md)
+- [Hamcrest Matchers](./exercises/hamcrest.md)
+- [Testing Poems API](./exercises/poems_test.md)
 - [Logging](../toolbox/javalin/logging.md)
 - We will work on transforming a simple API into a more advanced API with error handling and logging.
 
