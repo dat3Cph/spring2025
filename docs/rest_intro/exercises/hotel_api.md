@@ -16,46 +16,34 @@ permalink: /rest-intro/exercises/hotel-api-part-1/
 
 ## Part 1 setup project
 
-- Setup a new maven project in IntelliJ
+- Setup a new maven project in IntelliJ (or use your intellij template with Hibernate)
 - Add the following dependencies to the pom.xml file:
-- Add necessary dependencies to pom.xml:
   - Javalin
   - JUnit
-  - Gson or Jackson
+  - Rest Assured
+  - Hamcrest
+  - Jackson
   - hibernate
   - postgresql
+  - slf4j-api
+  - logback
 - Create a new javalin application with 2 ressources: `Hotel`  and `Room`
 - Create a new database in postgresql called `hotel`
-- Create a IDAO generic interface with the following methods: *)
-  - getAll()
-  - getById()
-  - create()
-  - update()
-  - delete()
-- Create an abstract DAO class that implements the IDAO interface *)
-- Create a HotelDAO and a RoomDAO that extends the abstract DAO class
-- Add a method to the HotelDAO that returns all rooms for a specific hotel
-
-*) NB! If you have trouble with inheritance and generics, you can skip the generic interface and abstract class and just create the DAO classes with the methods you need. You should also see the hint at the end of this document for more details.
-
-## Part 2 DTOs
-
-- Create a HotelDTO and a RoomDTO with the following fields:
-  HotelDTO:
-  - id
-  - name
-  - address
-  - rooms
-
-  RoomDTO:
-  - id
-  - hotelId
-  - number
-  - price
-
+- Create DTOs for `Hotel` and `Room`
+  - HotelDTO: id, name, address, rooms
+  - RoomDTO: id, hotelId, number, price
 - Implement functionality to convert between DTOs and Entities. Both ways.
+- Implement an interface with the following methods:
+  - getAllHotels()
+  - getHotelById()
+  - createHotel()
+  - updateHotel()
+  - deleteHotel()
+  - addRoom(Hotel hotel, Room room)
+  - removeRoom(Hotel hotel, Room room)
+  - getRoomsForHotel(Hotel hotel)
 
-## Part 3 create API Ressources
+## Part 2 create API Ressources
 
 - Create a HotelController and a RoomController that handles the above functionality using the DTOs
 - Create a new Routes.java file that contains all routes for the application and implement the following routes with json:
@@ -73,29 +61,25 @@ permalink: /rest-intro/exercises/hotel-api-part-1/
     - response json: `{id: 1, name: "Hotel renamedHotel", address: "Address 1"}`
   - DELETE /hotel/{id}
     - response json: `{id: 1, name: "Hotel 1", address: "Address 1"}`
-  - GET /room
-    - Response json: `[{id: 1, hotelId: 1, number: 1, price: 100}, {id: 2, hotelId: 1, number: 2, price: 200}]`
-  - GET /room/{id}
-    - Response json `{id: 1, hotelId: 1, number: 1, price: 100}`
-  - POST /room
-    - Request json `{hotelId: 1, number: 1, price: 100}`
-    - Response json `{id: 1, hotelId: 1, number: 1, price: 100}`
-  - PUT /room/{id}
-    - Request json: `{hotelId: 1, number: 1234, price: 333}`
-    - Response json `{id: 1, hotelId: 1, number: 1234, price: 333}`
-  - DELETE /room/{id}
-    - Response json: `{id: 1, hotelId: 1, number: 1, price: 100}`
 
-In above api, if no request json is specified, then the request body should be empty.
+In above api, if no request json is specified, then the request body should be empty and an appropriate status code should be used.
 
-NB! Use an http file to test the endpoints.
+- Use an http file to test the endpoints.
 
-## Part 4 Error handling
+## Part 3 Error handling
 
-- Implement app.error() to handle:
-  - 404 Not Found (used for both missing resources and missing routes)
 - Implement app.exception() to handle:
   - IllegalStateException: When posting or updating a hotel or room with incorrect json representation.
+  - Exception: when anything else goes wrong.
+
+## Part 4: Rest Assured Testing
+Setup a rest assured test for the Hotel API. Make The test should test the following:
+- Get all hotels
+- Get a specific hotel
+- Get all rooms for a specific hotel
+- Create a new hotel
+- Update a hotel
+- Delete a hotel
 
 ## Part 5: (Optional) logging
 
@@ -109,28 +93,3 @@ Use our small tutorial from yesterday and use LogBack to log requests, responses
   - Request body
   - Response status code
   - Response body
-
-## Part 6 (Optional) Documentation
-
-- Configure javalin to use `RouteOverviewPlugin` to create an interactive documentation of your API.
-
-## Monday review
-
-- Prepare a short presentation of your API for Monday's review session. You will have 5 minutes to present your API and show how it works. You can use an http file to demonstrate the API.
-
-## Hint on generics and inheritance
-
-When implementing your DAOs, consider creating a generic `IDAO` interface and an `AbstractDAO` class to handle common CRUD operations for any entity type. This approach helps reduce code duplication and makes your code more maintainable. Here’s a quick guide:
-
-1. **Define the `IDAO` Interface**: This interface should specify basic CRUD methods (`getAll()`, `getById()`, `create()`, `update()`, `delete()`) using generics (`<T>`) to handle different types of entities.
-
-2. **Create an `AbstractDAO` Class**: Implement the `IDAO` interface in an abstract class called `AbstractDAO`. This class will provide common implementations of CRUD methods, utilizing an `EntityManager` for database interactions. Use generics to make it flexible for any entity type.
-
-3. **Extend `AbstractDAO` in Specific DAOs**: Create concrete DAO classes like `HotelDAO` and `RoomDAO` that extend `AbstractDAO`. These classes can inherit the common CRUD functionality and add any specific methods needed for their respective entities, such as fetching all rooms for a particular hotel in `HotelDAO`.
-
-4. **Example Method Signatures**:
-   - In `IDAO`: `List<T> getAll();`
-   - In `AbstractDAO`: `public List<T> getAll() { // common implementation }`
-   - In `HotelDAO`: `public List<Room> getRoomsForHotel(int hotelId) { // specific implementation }`
-
-**If you find generics and inheritance challenging**, you can skip this approach and directly implement the required CRUD methods in your DAO classes (`HotelDAO` and `RoomDAO`). However, using the interface and abstract class will make your code cleaner and more reusable.
