@@ -75,13 +75,13 @@ permalink: /rest-intro
 
 ### Exercises in class
 
-- [Gherkin Syntax](./exercises/gherkin)
-- [Hamcrest Matchers](./exercises/hamcrest)
-- [Testing Poems API](./exercises/poems)
+- [Gherkin Syntax](./rest-intro/exercises/gherkin)
+- [Hamcrest Matchers](./rest-intro/exercises/hamcrest)
+- [Testing Poems API](./rest-intro/exercises/poems)
 - [Logging](../toolbox/javalin/logging.md)
 - We will work on transforming a simple API into a more advanced API with error handling and logging.
 
 ## Friday (exercise day)
 
-- [Hotel API](./exercises/hotel_api_part_1)
+- [Hotel API](./rest-intro/exercises/hotel-api-part-1)
 
