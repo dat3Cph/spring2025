@@ -5,7 +5,7 @@ layout: default
 nav_order: 2
 grand_parent: Rest API Test and Security
 parent: Exercises
-permalink: /rest-test-security/exercises/hamcrest/
+permalink: /rest_intro/exercises/hamcrest/
 ---
 
 # Hamcrest Matchers Exercises

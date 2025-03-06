@@ -5,7 +5,7 @@ layout: default
 nav_order: 3
 grand_parent: Rest API Test and Security
 parent: Exercises
-permalink: /rest-test-security/exercises/poems/
+permalink: /rest_intro/exercises/poems/
 ---
 
 # Poems API Test

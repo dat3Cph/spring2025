@@ -5,7 +5,7 @@ layout: default
 nav_order: 1
 grand_parent: Rest API Test and Security
 parent: Exercises
-permalink: /rest-test-security/exercises/gherkin-syntax/
+permalink: /rest_intro/exercises/gherkin/
 ---
 
 # Gherkin Syntax Exercises
