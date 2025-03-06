@@ -75,7 +75,7 @@ permalink: /rest-intro
 
 ### Exercises in class
 
-- [Gherkin Syntax](./rest-intro/exercises/gherkin)
+- [Gherkin Syntax](./exercises/gherkin.md)
 - [Hamcrest Matchers](./rest-intro/exercises/hamcrest)
 - [Testing Poems API](./rest-intro/exercises/poems)
 - [Logging](../toolbox/javalin/logging.md)
