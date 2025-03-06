@@ -76,8 +76,8 @@ permalink: /rest-intro
 ### Exercises in class
 
 - [Gherkin Syntax](./exercises/gherkin.md)
-- [Hamcrest Matchers](./rest-intro/exercises/hamcrest)
-- [Testing Poems API](./rest-intro/exercises/poems)
+- [Hamcrest Matchers](./exercises/hamcrest.md)
+- [Testing Poems API](./exercises/poems.md)
 - [Logging](../toolbox/javalin/logging.md)
 - We will work on transforming a simple API into a more advanced API with error handling and logging.
 
