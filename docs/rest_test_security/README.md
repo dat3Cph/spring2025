@@ -23,23 +23,20 @@ permalink: /rest-test-security
 - [Password hashing with Bcrypt (7 min)](https://www.youtube.com/watch?t=1&v=O6cmuiTBZVs)
 - [Hashing passwords Video](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9d3b7d78-48cc-4286-8ebb-b13200acb994)
 
-- [How does JWT work? (1:06 min)](https://www.youtube.com/watch?t=test&v=K6pwjJ5h0Gg)
-- [JSON Web Tokens (first 24 min ONLY)](https://www.youtube.com/watch?t=1&v=oXxbB5kv9OA)
-- [JWT Video](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d329a3f7-1a16-41d9-9e92-b13200c2a4b0)
 
 ### Exercises in in class
-- [Hashing Passwords when registering]()
+- Hashing Passwords when registering
 
 ## Wednesday (CodeLab)
 
-- [Codelab](./exercises/codelab.md) and [Hotel API Test](./exercises/hotel_test.md)
+- [Codelab](./exercises/codelab.md) 
 
 ## Thursday (class) - Security
 
 ### Prepare for class
-
-#### Video
-
+- [How does JWT work? (1:06 min)](https://www.youtube.com/watch?t=test&v=K6pwjJ5h0Gg)
+- [JSON Web Tokens (first 24 min ONLY)](https://www.youtube.com/watch?t=1&v=oXxbB5kv9OA)
+- [JWT Video](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d329a3f7-1a16-41d9-9e92-b13200c2a4b0)
 
 ### Exercises in class
 
