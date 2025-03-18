@@ -55,7 +55,7 @@ cat id_rsa.pub
 
 ## Finalize Details
 
-- Giv din droplet et godt navn. F.eks. `2sem` som Hostname.
+- Giv din droplet et godt navn. F.eks. `3sem` som Hostname.
 
 ## Create droplet
 

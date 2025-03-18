@@ -1,8 +1,6 @@
 # Postgres setup for 3rd semester
 # Update environment variables in .env file
 
-version: '3'
-
 services:
 
   db:

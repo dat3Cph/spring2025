@@ -84,10 +84,7 @@ No preparations needed for this day. But bring your laptop ;-)
 
 ## Friday (exercise day)
 
-No Friday assignment this week. Use the day to finish the exercises from the week. And show up for the JumpStart Event in the auditorium from
-09:00 to 12:00 and bring a friend.
-
-![Jumpstart](./images/jumpstart.png)
+Let's finish the week strong with a brainstorm and preparations for next weeks SP-2. More to come!
 
 <hr>
 

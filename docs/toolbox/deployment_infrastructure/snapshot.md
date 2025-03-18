@@ -1,11 +1,11 @@
 ---
-title: 7. Snapshot
+title: 6. Snapshot
 description: Snapshot af Droplet
 layout: default
 grand_parent: Toolbox
 parent: Deployment Infrastructure
 permalink: /toolbox/deployment-infrastructure/snapshot
-nav_order: 8
+nav_order: 7
 ---
 
 # Tag et snapshot

@@ -246,7 +246,3 @@ We will get back to this in a later tutorial when setting up [The Hotel API](./h
 Now that you have set up the CI/CD pipeline for your Java project, you can proceed to the next part of the tutorial: [Setting up Postgres](./postgres_setup.md).
 
 **Happy Coding!**
-
-## How AI sees it ;-)
-
-![pipeline](./images/cicd-pipeline.png)

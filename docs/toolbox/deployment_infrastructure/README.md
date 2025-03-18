@@ -10,7 +10,7 @@ permalink: /toolbox/deployment-infrastructure/
 
 # Deployment
 
-På 2. semester deployede vi vores Javalin websites hos Digital Ocean. Vi gav to modeller. Den blå og den røde udgave. Den røde indbefattede køb af domænenavn. Nogle studerende har haft orlov, og har derfor ikke være igennem samme forløb. Så derfor skal du lige finde ud af hvilken kategori du hører til:
+På 2. semester deployede vi vores Javalin websites hos Digital Ocean. Fra efterår 2024 brugte alle det vi kaldte for den **røde udgave**. Den røde indbefatter køb af domænenavn. Nogle studerende har haft orlov, og har derfor ikke være igennem samme forløb. Så derfor skal du lige finde ud om du har en kørende droplet - eller om du skal sætte en op fra bunden.
 
 ## Identificering af hvor lang vej du er kommet
 

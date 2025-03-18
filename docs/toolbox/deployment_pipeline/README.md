@@ -10,7 +10,7 @@ permalink: /toolbox/deployment-pipeline/
 
 # Deployment
 
-På 2. semester deployede vi vores Javalin websites hos Digital Ocean. Vi gav to modeller. Den blå og den røde udgave. Den røde indbefattede køb af domænenavn. Nogle studerende har haft orlov, og har derfor ikke være igennem samme forløb. Så derfor skal du lige finde ud af hvilken kategori du hører til:
+På 2. semester deployede vi vores Javalin websites hos Digital Ocean. Fra efteråret 2024 har vi anvendt det vi kalder for **den røde pill**, som indbefattede køb af domænenavn. Nogle studerende har haft orlov, og har derfor ikke være igennem samme forløb. Så derfor skal du lige finde ud af hvilken kategori du hører til:
 
 ## Identificering af hvor lang vej du er kommet
 
@@ -36,9 +36,8 @@ I forhold til ovenstående skema, kan du finde ud af hvad du mangler her:
 3. [Log på Droplet første gang](./logpaadroplet.md)
 4. [Opret ny bruger i Ubuntu og konfigurer en firewall](./ubuntufix.md)
 5. [Installation af Java 17 på Droplet](./java.md)
-6. [Installation af Postgres 16.2 i en Docker container](./postgres_setup.md)
-7. [Tag et snapshot af din Droplet](./snapshot.md)
-8. [Deploy dit website (det gør vi først onsdag)](./docker_caddy_droplet.md)
+6. [Tag et snapshot af din Droplet](./snapshot.md)
+7. [Deploy dit website (det gør vi først onsdag)](./docker_caddy_droplet.md)
 
 Her er en oversigt over den overordnede system arkitektur:
 

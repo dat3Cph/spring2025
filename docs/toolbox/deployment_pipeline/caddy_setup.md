@@ -29,21 +29,9 @@ Caddy is a powerful, enterprise-ready, open-source web server with automatic HTT
 3. You will need to buy a domain name and setup the DNS at Digital Ocean.
 4. You should have created a subdomain for your Javalin application. For example, if your domain is `mydomain.com`, then you could create a subdomain like `hotel.mydomain.com` for your Javalin application.
 
-## Step 1 (red pill): Merge docker compose files
+## Step 1: Updating the Docker Compose File
 
-If you went the red pill way on 2nd semester, you will have a `docker-compose.yml` file in the `~jetty/caddy_deployment` folder on your Droplet. This file configures the Caddy server to serve the Javalin application over HTTPS. You will also have a `Caddyfile` in the same folder that configures the reverse proxy for the Javalin API.
-
-We want to keep all the Docker configurations in one compose file to simplify the deployment process. To do this, we will merge the Caddy and Javalin configurations from the `caddy_deployment` folder to the `2semDockerSetupRemote` folder. This will allow us to keep all the Docker configurations in one compose file and simplify the deployment process.
-
-However, we recommend that you wait with this step until you have completed the other steps in these tutorials. This will ensure that you have a working setup before you start merging the Docker Compose files and you 2nd semester projects. So we begin with testing the hotelAPI first.
-
-But when you have the hotelAPI up and running, then follow these steps to merge the docker compose files:
-
-- [Red Pill Migration](./red_pill_migration.md)
-
-## Step 2 (everyone): Updating the Docker Compose File
-
-Move to the `~jetty/2semDockerSetupRemote` folder on your Droplet and open the `docker-compose.yml` file in an editor (nano).
+Move to the `~jetty/deployment` folder on your Droplet and open the `docker-compose.yml` file in an editor (nano).
 
 To add the Caddy server to this Docker Compose file, you can connect it to both the `backend` network (to interact with `db`) and an additional `frontend` network for communication with the `hotelAPI`. This setup allows Caddy to serve as a reverse proxy for the Javalin API while keeping the `db` service on its dedicated network.
 
@@ -86,7 +74,7 @@ volumes:
   - Caddy is only connected to the `frontend` network, as it doesn’t need to access the database.
   - It uses volumes to mount the `Caddyfile` and persist configuration data.
 
-## Step 3: Example Caddyfile Configuration
+## Step 2: Example Caddyfile Configuration
 
 In the `Caddyfile`, configure the reverse proxy for the Javalin API:
 

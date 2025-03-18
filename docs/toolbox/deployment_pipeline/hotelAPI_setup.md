@@ -17,26 +17,19 @@ In this exercise, you will learn how to set up the HotelAPI Javalin application 
 
 ## Introduction - flashback to 2nd semester
 
-On 2nd semester we had two options for deploying our web applications. We could either use the "[blue](https://dat2cph.github.io/content/linux/deployment/blue-pill/)" or the "[red](https://dat2cph.github.io/content/linux/deployment/red-pill/)" pill. The blue pill was the easy way out. We secure copied the fat jar-file to the droplet and ran it with `java -jar`. So we only had Postgres running in a Docker Container. The rest were running on the host machine. The websites were exposed on IP addresses and a port number.
-
-The red pill was the harder way. But also the more sophisticated. We created a Dockerfile and a docker-compose file and ran the application in a Docker container. We also set up a reverse proxy with Caddy to serve the application over HTTPS and a domain name. If you went the red pill way, you should have a `docker-compose.yml` file on your Droplet in the `~jetty/caddy_deployment` folder.
+To deploy a Javalin + Thymeleaf multipage application, we created a Dockerfile and a docker-compose file and ran the application in a Docker container. We also set up a reverse proxy with Caddy to serve the application over HTTPS and a domain name. You should have a `docker-compose.yml` file on your Droplet in the `~jetty/deployment` folder.
 
 ![RedBlue](./images/redblue.webp)
 
-So to sum it up. If you went the blue pill way, you should have a Postgres database running in a Docker Container. If you went the red pill way, you should have a Postgres database and Caddy, and Javalin applications running in Docker Containers. So you would be one of these personas:
+So to sum it up. Your Droplet contains:
 
-- **Blue:** Only Postgres. The docker-compose file is located in the `~jetty/2semDockerSetupRemote` folder.
-- **Red:** Postgres, Caddy, and Javalin. Postgres is still configured in the docker-compose.yml file in the `~jetty/2semDockerSetupRemote` folder. Caddy and Javalin are configured in the docker-compose.yml file in the `~jetty/caddy_deployment` folder.
+Postgres, Caddy, and Javalin configured in the docker-compose.yml file in the `~jetty/deployment` folder. You will probably also have a deployed version of your Carport project etc.
 
-So who are you. Blue or Red?
+We don't want to mess with the Postgres data, so we keep the `~jetty/deployment` folder as it is and then add to the docker-compose file.
 
-- **Blue:** Then you will keep all Docker configurations in the docker-compose.yml in the `~jetty/2semDockerSetupRemote` folder. Later we can rename the folder to `~jetty/deployment` to keep things organized - and distance ourselves from the past.
+## Step 1: Add the hotelAPI Service to the Docker Compose File
 
-- **Red:** Then you will keep the Postgres configuration in the docker-compose.yml in the `~jetty/2semDockerSetupRemote` folder. We don't want to mess with the Postgres data. To keep things easier to manage, we will migrate (move) the Caddy and Javalin configurations to the `~jetty/2semDockerSetupRemote` folder. We will also rename that folder to `~jetty/deployment` to keep things organized. This takes a small effort to merge the two docker-compose files into one. But it is worth it.
-
-## Step 1 (everyone): Add the hotelAPI Service to the Docker Compose File
-
-1. Navigate to the `~jetty/2semDockerSetupRemote` folder on your Droplet.
+1. Navigate to the `~jetty/deployment` folder on your Droplet.
 2. Open the `docker-compose.yml` file in an editor (nano).
 3. Add this services to the file below the Postgres service. Remember to rename the image to you own name instead of `jonbertelsen/hotel_api:latest`:
 

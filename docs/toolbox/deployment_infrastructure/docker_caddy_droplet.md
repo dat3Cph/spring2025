@@ -1,11 +1,11 @@
 ---
-title: 8. Docker and Caddy
+title: 7. Docker and Caddy
 description: Deployment with your own domain name
 layout: default
 parent: Deployment Infrastructure
 grand_parent: Toolbox
 permalink: /toolbox/deployment-infrastructure/docker-caddy/
-nav_order: 9
+nav_order: 8
 ---
 
 # 8. Deployment on Droplet with Docker and Caddy

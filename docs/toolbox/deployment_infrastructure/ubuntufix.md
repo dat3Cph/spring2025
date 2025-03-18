@@ -113,11 +113,11 @@ ssh jetty@ip
 
 Hvis det går godt, så læg mærke til at prompten hedder noget i stil med `jetty@dropletnavn:~$`
 
-### 5. Konfigurer en firewall (ufw)
+### 5. Konfigurer en firewall
 
-Vi lukker kun trafik ind til ssh, postgres fra specifikke IP-numre (hvor du arbejder fra). Når du senere skal deploye dit Javalin website, har vi to måder at gøre det på. Den første kræver at mindst port 7070 er åben. Den anden at port 80 og 443 er åbne. Det gør vi senere.
+Vi lukker kun trafik ind til ssh, postgres fra specifikke IP-numre (hvor du arbejder fra).
 
-Til at oprette en firewall har vi to muligheder. Den første er at bruge Linux' `ufw` (uncomplicated firewall). Den anden er at bruge Digital Ocean's firewall. Vi tager den anden mulighed.
+Til at oprette en firewall har vi to muligheder. Den første er at bruge Linux' `ufw` (uncomplicated firewall). Den anden er at bruge Digital Ocean's firewall. Vi tager den anden mulighed. Desvære kan ufw skabe problemer for Docker, så vi anvender den Digital Ocean stiller til rådighed. Det har også den fordel, at det ikke går ud over droplettens performance.
 
 - Følg denne video for at opsætte en [firewall hos Digital Ocean](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b2178213-1924-4325-85c6-b15a00aba65e).
 

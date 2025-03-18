@@ -3,6 +3,7 @@ title: Red Pill Migration
 description: Migrating docker-compose to postgres file
 layout: default
 nav_order: 9
+nav_exclude: true
 grand_parent: Toolbox
 parent: Deployment Pipeline
 permalink: /toolbox/deployment-pipeline/red-pill-migration/
