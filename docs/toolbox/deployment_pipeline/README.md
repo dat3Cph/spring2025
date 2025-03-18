@@ -37,7 +37,7 @@ I forhold til ovenstående skema, kan du finde ud af hvad du mangler her:
 4. [Opret ny bruger i Ubuntu og konfigurer en firewall](./ubuntufix.md)
 5. [Installation af Java 17 på Droplet](./java.md)
 6. [Tag et snapshot af din Droplet](./snapshot.md)
-7. [Deploy dit website (det gør vi først onsdag)](./docker_caddy_droplet.md)
+7. [Deploy dit website (det gør vi først onsdag)](./full_pipeline.md)
 
 Her er en oversigt over den overordnede system arkitektur:
 
