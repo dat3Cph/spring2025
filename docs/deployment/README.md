@@ -82,6 +82,11 @@ This week's CodeLab is a full pipeline exercise. You will set up a full CI/CD pi
 
 No preparations needed for this day. But bring your laptop ;-)
 
+### In-class exercises
+
+1. First we will go through how to setup integration testing of Javalin endpoints with security. [Hotel API with tests and security](https://github.com/jonbertelsen/todo_api). The branch called "restassured" is the one to look at. It contains a working example of how to set up integration testing for rest endpoints.
+2. Then we will apply the methodology to a new project. We will use this project as a base for the tests: [Todos](https://github.com/jonbertelsen/todo_api)
+
 ## Friday (exercise day)
 
 Let's finish the week strong with a brainstorm and preparations for next weeks SP-2. More to come!
