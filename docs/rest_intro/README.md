@@ -15,7 +15,7 @@ permalink: /rest-intro
 
 ## Monday
 
-- Review of the friday exercise: Activity Logger part 2. Prepare a short presentation of your solution. 
+- Review of the friday exercise: Activity Logger part 2. Prepare a short presentation of your solution.
 
 ## Tuesday (class)
 
@@ -62,7 +62,7 @@ permalink: /rest-intro
 
 - [Logback](https://www.baeldung.com/logback) - skim
 - [Javalin Exception Mapping](https://javalin.io/documentation#exception-mapping)
-- [3rd semester documentation format](https://dat3cph.github.io/material/toolbox/rest/rest-api-documentation)
+- [3rd semester documentation format](../toolbox/rest/rest-api-documentation)
 - [Rest-assured.io (5 min)](http://rest-assured.io/)
 - [Short Rest Assured Tutorial, read 1-7 (5 min)](https://www.baeldung.com/rest-assured-tutorial)
 - [Hamcrest guide (skim and use for reference 10 min)](https://www.baeldung.com/java-junit-hamcrest-guide)
@@ -84,4 +84,3 @@ permalink: /rest-intro
 ## Friday (exercise day)
 
 - [Hotel API](./rest-intro/exercises/hotel-api-part-1)
-
