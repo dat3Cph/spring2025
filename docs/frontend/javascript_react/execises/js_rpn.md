@@ -13,7 +13,7 @@ permalink: /frontend/javascript-react-intro/exercises/rpn/
 ![Codelab](./images/codelab.png){: .x .mx-auto .d-block .my-5 .md .d-md-none .w-50}
 ![Codelab](./images/codelab.png){: .d-none .d-md-inline-block .ml-3 .mb-5 .float-right width="200px"}
 
-In the [calculator exercise](./Calculator.md), we used the Javascript `eval()` method. It's far from a perfect solution, and in this exercise we will take the first steps to a better way. We will explore **[Reverse Polish Notation (RPN)](https://en.wikipedia.org/wiki/Reverse_Polish_notation)**, a postfix notation that eliminates the need for parentheses and respects operator precedence implicitly. RPN is used in many programming languages and calculators because of its simplicity and efficiency.
+In the [calculator exercise](./js_calculator.md), we used the Javascript `eval()` method. It's far from a perfect solution, and in this exercise we will take the first steps to a better way. We will explore **[Reverse Polish Notation (RPN)](https://en.wikipedia.org/wiki/Reverse_Polish_notation)**, a postfix notation that eliminates the need for parentheses and respects operator precedence implicitly. RPN is used in many programming languages and calculators because of its simplicity and efficiency.
 
 The famous HP calculators use RPN. If you have never used one, you should try it. It's a different way of thinking about calculations. This one from 1981 is a beauty, and you can still buy them today.:
 
