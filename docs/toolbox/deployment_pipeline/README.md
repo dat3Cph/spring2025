@@ -30,13 +30,13 @@ På 2. semester deployede vi vores Javalin websites hos Digital Ocean. Fra efter
 
 I forhold til ovenstående skema, kan du finde ud af hvad du mangler her:
 
-0. [Opret dig hos Digital Ocean](./digitalocean_signup.md)
-1. [Opret (eller find din) ssh nøgle](./sshkeys.md)
-2. [Opsætning af virtuel server hos Digital Ocean](./droplet.md)
-3. [Log på Droplet første gang](./logpaadroplet.md)
-4. [Opret ny bruger i Ubuntu og konfigurer en firewall](./ubuntufix.md)
-5. [Installation af Java 17 på Droplet](./java.md)
-6. [Tag et snapshot af din Droplet](./snapshot.md)
+0. [Opret dig hos Digital Ocean](../deployment_infrastructure/digitalocean_signup.md)
+1. [Opret (eller find din) ssh nøgle](../deployment_infrastructure/sshkeys.md)
+2. [Opsætning af virtuel server hos Digital Ocean](../deployment_infrastructure/droplet.md)
+3. [Log på Droplet første gang](../deployment_infrastructure/logpaadroplet.md)
+4. [Opret ny bruger i Ubuntu og konfigurer en firewall](../deployment_infrastructure/ubuntufix.md)
+5. [Installation af Java 17 på Droplet](../deployment_infrastructure/java.md)
+6. [Tag et snapshot af din Droplet](../deployment_infrastructure/snapshot.md)
 7. [Deploy dit website (det gør vi først onsdag)](./full_pipeline.md)
 
 Her er en oversigt over den overordnede system arkitektur:

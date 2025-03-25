@@ -38,7 +38,7 @@ Programmering af et REST API Javalin med:
 | 10   | Fetching json from an external API and parsing it to a DTO | [Fetching from api cookbook](../../../toolbox/dataintegration/httpclient)                                             |
 | 11   | DAO tests                                                  | [Example](https://github.com/jonbertelsen/gls/blob/main/src/test/java/dat/PackageDAOTest.java). Be careful which version of HibernateConfig you use!                                                                                                                     |
 | 12   | Rest Assured tests                                         | [Rest assured overview](../../../toolbox/test/rest-assured)                                                                    |
-| 13   | Securing Rest Endpoints with JWT and logins                | 1. [Overview of security](../../../toolbox/security/api)<br/>2. [How to apply security to a project](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=7e145a6e-511b-48b0-919f-b20200ef108e) |
+| 13   | Securing Rest Endpoints with JWT and logins                | 1. [Overview of security](../../../toolbox/security/api_security.md)<br/>2. [How to apply security to a project](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=7e145a6e-511b-48b0-919f-b20200ef108e) |
 
 ## Startkode
 

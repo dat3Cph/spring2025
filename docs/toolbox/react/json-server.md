@@ -11,7 +11,7 @@ permalink: /toolbox/react/json-server
 
 # JSON Mock Server
 
-[npm json server](https://www.npmjs.com/package/json-server) and [json-server](github.com/typicode/json-server) is a great tool for creating a mock server for your frontend projects. It is easy to use and can be set up in minutes.
+[npm json server](https://www.npmjs.com/package/json-server) and [json-server](https://github.com/typicode/json-server) is a great tool for creating a mock server for your frontend projects. It is easy to use and can be set up in minutes.
 
 1. **Prerequisites** Make sure you have the following installed:
 
@@ -34,7 +34,7 @@ permalink: /toolbox/react/json-server
      },
    ```
 
-4. create dummy data by making a javascript program and run it with node.   
+4. create dummy data by making a javascript program and run it with node.
 
 5. Create a file in the working folder: mockdata.js:
 
@@ -69,10 +69,13 @@ npm install casual --save-dev
 ```
 
 **Windows users:** In git bash run the js script like this:
+
 ```assembly
 bash -c "node mockdata.js > booksdb.json"
 ```
+
 **Mac and Linux users:** In git bash run the js script like this:
+
 ```assembly
 node mockdata.js > booksdb.json
 ```
@@ -81,8 +84,7 @@ It will write an array of 15 book objects into a file: booksjb.json
 
 Open the file to see the data format (or in the bash just `node mockdata.js` without the pipe `>` character)
 
-
-7. Now the json-server can be started with: 
+7. Now the json-server can be started with:
 
    ```
    npm run backend

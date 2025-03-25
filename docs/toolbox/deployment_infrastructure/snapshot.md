@@ -1,5 +1,5 @@
 ---
-title: 6. Snapshot
+title: 7. Snapshot
 description: Snapshot af Droplet
 layout: default
 grand_parent: Toolbox
@@ -22,5 +22,5 @@ Det tager nogle minutter før dit snapshot er klart. Så kan du starte din Dropl
 
 ## Videre herfra
 
-- [Næste trin](./deployment.md)
+- [Næste trin](../deployment_pipeline/full_pipeline.md)
 - [Hop tilbage til oversigten](./README.md)

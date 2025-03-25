@@ -13,16 +13,15 @@ permalink: /frontend/react-4/exercises/codelab/
 ![Codelab](./images/codelab.png){: .x .mx-auto .d-block .my-5 .md .d-md-none .w-50}
 ![Codelab](./images/codelab.png){: .d-none .d-md-inline-block .ml-3 .mb-5 .float-right width="200px"}
 
-This CodeLab exercise is designed to help you practice the concepts you have learned in the Frontend Week IV module. 
-You will be working with a partner to complete the tasks in this exercise. 
+This CodeLab exercise is designed to help you practice the concepts you have learned in the Frontend Week IV module.
+You will be working with a partner to complete the tasks in this exercise.
 
-<img src="./images/Truck.png" width="800"/>
-
-![Truck](./images/Truck.png)
-
+![Truck](./images/Truck.png){: .ml-3 .mb-5 .float-right width="400px"}
 
 ## The assignment
+
 ### Basic setup with pages
+
 1. Create a new React application using `npm create vite@latest` and choose the React template.
 2. Install the following dependencies:
    - `styled-components`

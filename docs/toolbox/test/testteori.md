@@ -29,7 +29,7 @@ Figuren illustrerer [V-modellen](https://en.wikipedia.org/wiki/V-Model_(softwar
 
 ### Unit tests
 
-Der laves unit tests for alle “udregninger” i systemet. En unit defineres typisk som en metode, men kan også være en klasse eller en komponent. Disse tests kan enten laves som [black-box](http://softwaretestingfundamentals.com/black-box-testing/) eller [white-box](http://softwaretestingfundamentals.com/white-box-testing/), og der laves både positive og negative tests (dette gælder for alle testniveauer, se mere nedenfor). Unit tests skrives og afvikles umiddelbart efter koden er skrevet for at få kortest mulig feedback (mens koden er i frisk erindring). Med mindre man laver Test-Driven Development, hvor testen skrives først.  
+Der laves unit tests for alle “udregninger” i systemet. En unit defineres typisk som en metode, men kan også være en klasse eller en komponent. Disse tests kan enten laves som [black-box](./testtypes.md#-black-box-testing) eller [white-box](./testtypes.md#-white-box-testing), og der laves både positive og negative tests (dette gælder for alle testniveauer, se mere nedenfor). Unit tests skrives og afvikles umiddelbart efter koden er skrevet for at få kortest mulig feedback (mens koden er i frisk erindring). Med mindre man laver Test-Driven Development, hvor testen skrives først.  
   
 Hver enkelt unit test består af tre faser.
 
@@ -81,7 +81,7 @@ Overordnet set er forskellen at med en black-box test er vi kun interesseret i r
 Ækvivalensklassepartionering er en teknik, som kan anvendes på alle testniveauer. Teknikken inddeler data i partioner, der giver samme programadfærd. Der udledes en test (kaldes mere formelt for en testcase) for hver ækvivalensklasse. Dermed systematiseres identifikationen af test cases og antal test cases reduceres.
 
 Eksempel - metoden legalAge (er du myndig):  
-![drawing](https://datsoftlyngby.github.io/dat2sem2020SpringBornholm/Modul5/Week3-Test/img/EPA_eksempel.PNG)
+![drawing](./images/EPA_eksempel.PNG)
 
 ### Grænseværdianalyse (black-box teknik)
 
@@ -89,17 +89,17 @@ Grænseværdianalyse identificerer test cases i grænserne for et datasæt. Tekn
 
 Eksempel - metoden legalAge (er du myndig):
 
-![drawing](https://datsoftlyngby.github.io/dat2sem2020SpringBornholm/Modul5/Week3-Test/img/BVA_eksempel.PNG)
+![drawing](./images/BVA_eksempel.PNG)
 
 ### Code Coverage (white-box teknik)
 
 Vi vil gerne undersøge hvor stor en del af koden som er dækket af tests. Resultatet kan enten være et samlet procenttal, eller vi kan gå i detaljer og undersøge hvilke kodelinier, som er testet. Sidstnævne kræver et værktøj (eller virkelig meget tålmodighed!). I IntelliJ er Code Coverage indbygget og køres ved at vælge “Run with Coverage”.
 
-![drawing](https://datsoftlyngby.github.io/dat2sem2020SpringBornholm/Modul5/Week3-Test/img/coverage.png)
+![drawing](./images/coverage.png)
 
 Resultat kan ses i plugin fanebladet “Coverage” længst til højre i IntelliJ vinduet:
 
-![drawing](https://datsoftlyngby.github.io/dat2sem2020SpringBornholm/Modul5/Week3-Test/img/coveragedetails.png)
+![drawing](./images/coveragedetails.png)
 
 #### Agile testkvadranter
 
@@ -110,12 +110,11 @@ I agile projekter benytter man gerne de agile testkvadranter til at gruppere de 
 * Q1 og Q4 relaterer til intern kvalitet - _bygger vi systemet rigtigt_
 * Q2 og Q3 har eksternt kundeperspektiv - _bygger vi det rigtige system_
 
-![](https://datsoftlyngby.github.io/dat2sem2020SpringBornholm/Modul5/Week3-Test/img/Agile_Testing_Quadrants.png)
+![](./images/Agile_Testing_Quadrants.png)
 
-Se f.eks. denne side på [Tutorialspoint](https://www.tutorialspoint.com/agile_testing/agile_testing_quadrants.htm) som uddyber de enkelte elementer i modellen.
+Se f.eks. denne side på [lisacrispin.com](https://lisacrispin.com/2024/10/11/the-agile-testing-quadrants/) som uddyber de enkelte elementer i modellen.
 
 ### Ressourcer
 
 * Her er en god artikel om at skrive test-bar kode af [Sergey Kolodyi](https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters)
-* Læs hvad David Bernstein skriver om kodekvalitet [Let Code Quality Guide You](https://datsoftlyngby.github.io/dat2sem2020SpringBornholm/Modul5/Week3-Test/cleancode.html)
-* Lisa Crispin om de fire [agile testkvadranter](https://lisacrispin.com/2011/11/08/using-the-agile-testing-quadrants/) og en imponerende [præsentation](https://lisacrispin.com/downloads/CoverBasesWithQuadrants.pdf) med mange gode detaljer
+* Lisa Crispin om de fire [agile testkvadranter](https://lisacrispin.com/2011/11/08/using-the-agile-testing-quadrants/) og en imponerende [præsentation](./docs/CoverBasesWithQuadrants.pdf) med mange gode detaljer

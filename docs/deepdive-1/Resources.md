@@ -28,9 +28,3 @@ permalink: /deepdive-1/resources
 - [Functional programming 101](https://www.youtube.com/watch?t=1&v=dAPL7MQGjyM&ab_channel=HiteshChoudhary)
 - [Java streams](https://www.youtube.com/watch?t=1&v=Q93JsQ8vcwY&ab_channel=Amigoscode)
 - [Generics](https://www.youtube.com/watch?t=1&v=K1iu1kXkVoA&ab_channel=CodingwithJohn)
-
-## Recommended reading material
-
-- [Java Lambda expression](https://www.javatpoint.com/java-lambda-expressions)
-- [Java streams](https://stackify.com/streams-guide-java-8/)
-- [Java generics](https://www.baeldung.com/java-generics)

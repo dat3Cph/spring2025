@@ -38,7 +38,7 @@ These are the steps:
 
 ### 1. Getting the project configured
 
-- Create a React project with [Vite](../../setup/vite.md)
+- Create a React project with [Vite](../../../toolbox/react/vite.md)
 - Cleaning up stuff
 
 ### 2. Using JSON server
@@ -253,6 +253,7 @@ export function fetchData(url, callback, method, body) {
 ### 6. Showing the persons
 
 ### 7. Inserting new persons
+
 ```react
 const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -269,5 +270,5 @@ const handleSubmit = (evt) => {
 ### 9. Deleting persons
 
 ### 10. Styling with html and css
-- Make it look smashing ;-)
 
+- Make it look smashing ;-)

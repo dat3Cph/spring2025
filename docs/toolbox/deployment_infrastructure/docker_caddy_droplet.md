@@ -1,5 +1,5 @@
 ---
-title: 7. Docker and Caddy
+title: 8. Docker and Caddy
 description: Deployment with your own domain name
 layout: default
 parent: Deployment Infrastructure
