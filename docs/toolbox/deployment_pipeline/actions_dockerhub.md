@@ -174,11 +174,17 @@ But first, we need to setup the project for CI/CD so GitHub Actions can build an
   inserted automatically på the `${project.groupId}`
 
 4. **Setting Up GitHub Secrets**:
-   To authenticate with Docker Hub, add two secrets to your GitHub repository:
-    - `DOCKERHUB_USERNAME`: Your Docker Hub username.
-    - `DOCKERHUB_TOKEN`: Your Docker Hub access token.
+   To authenticate with Docker Hub, first, add two secrets to your GitHub repository:
+      - `DOCKERHUB_USERNAME`: Your Docker Hub username.
+      - `DOCKERHUB_TOKEN`: Your Docker Hub access token.
 
    Navigate to **Settings** → **Secrets and variables** → **Actions** in your GitHub repository and add these two Repository secrets.
+
+   If you are using a `config.properties` file for storing credentials and keys in your java project, then make sure to also add them as secrets in your GitHub repository. For example:
+      - `SECRET_KEY` : 4c9f92b04b1e85fa56e7b7b0a34f2de4f5b08cd9bb4dfe8ac4d73b4f7f6ef37b
+      - `ISSUER`: Dit navn
+      - `TOKEN_EXPIRE_TIME`: 1800000
+      - `DB_NAME`: navnet på din database
 
 ## Step 2: Configuring Hibernate for Environment-Specific Configurations
 
