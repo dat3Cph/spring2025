@@ -50,45 +50,50 @@ But first, we need to setup the project for CI/CD so GitHub Actions can build an
    Create a file named `workflow.yml` inside the `.github/workflows` folder in the root of your project.
 
    ```yaml
-   # .github/workflows/workflow.yml
-   name: CI/CD WORKFLOW
-   on:
-     push:
-       branches: [ main ]
+    # .github/workflows/workflow.yml
+    name: CI/CD WORKFLOW
+    on:
+    push:
+        branches: [ restassured ]
 
-   jobs:
-     build:
-       runs-on: ubuntu-latest
+    jobs:
+    build:
+        runs-on: ubuntu-latest
 
-       steps:
-         - name: Checkout
-           uses: actions/checkout@v4
+        steps:
+        - name: Checkout
+            uses: actions/checkout@v4
 
-         - name: Set up JDK 17
-           uses: actions/setup-java@v4
-           with:
-             java-version: '17'
-             distribution: 'corretto'
+        - name: Set up JDK 17
+            uses: actions/setup-java@v4
+            with:
+            java-version: '17'
+            distribution: 'corretto'
 
-         - name: Build with Maven
-           run: mvn --batch-mode clean package
+        - name: Build with Maven
+            env:
+            DEPLOYED: ${{ secrets.DEPLOYED }}
+            SECRET_KEY: ${{ secrets.SECRET_KEY }}
+            ISSUER: ${{ secrets.ISSUER }}
+            TOKEN_EXPIRE_TIME: ${{ secrets.TOKEN_EXPIRE_TIME }}
+            run: mvn --batch-mode clean package
 
-         - name: Login to Docker Hub
-           uses: docker/login-action@v3
-           with:
-             username: {% raw %}${{ secrets.DOCKERHUB_USERNAME }}{% endraw %}
-             password: {% raw %}${{ secrets.DOCKERHUB_TOKEN }}{% endraw %}
+        - name: Login to Docker Hub
+            uses: docker/login-action@v3
+            with:
+            username: ${{ secrets.DOCKERHUB_USERNAME }}
+            password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-         - name: Set up Docker Buildx
-           uses: docker/setup-buildx-action@v3
+        - name: Set up Docker Buildx
+            uses: docker/setup-buildx-action@v3
 
-         - name: Build and push Docker image
-           uses: docker/build-push-action@v6
-           with:
-             context: .
-             file: ./Dockerfile
-             push: true
-             tags: {% raw %}${{ secrets.DOCKERHUB_USERNAME }}{% endraw %}/hotel_api:latest
+        - name: Build and push Docker image
+            uses: docker/build-push-action@v6
+            with:
+            context: .
+            file: ./Dockerfile
+            push: true
+            tags: ${{ secrets.DOCKERHUB_USERNAME }}/hotel_api:latest
    ```
 
 2. **Dockerfile**:
