@@ -12,10 +12,9 @@ permalink: /exam/backend/preparations
 
 ## Monday - SP-2 review
 
-**09:00 - 11:00 - Review of SP-2 - Online**
+**09:00 - 10:30 - Review of SP-2 - Online**
 
-Meet with your team and regular Monday review teacher and review the SP-2 assignment. If you have worked on SP-2 in
-a different team configuration, then join the team you worked with on SP-2 this Monday, and show up where the most of the team members usually meet.
+Join demo session on Zoom.
 
 At the review:
 
@@ -29,26 +28,24 @@ At the review:
 
 ## Tuesday - mock exam II
 
-**09:00 - 13:00 - Mock exam II - Home assignment**
+**09:00 - 14:00 - Mock exam II - Home assignment**
 
-We post a new mock exam on Tuesday. Like the one we gave you before the fall holiday. Give yourself 4 hours to solve it. You will probably not make it in 4 hours - but that is the point. You get faster by training. Solve the rest of the exercise afterwards.
+Try out a exam set. Give yourself 5 hours to solve it. You might not make it in 5 hours - but that is the point. You get faster by training. Solve the rest of the exercise afterwards.
 
 You can make the mock exam at home - or at the school. Make an effort to solve it alone. You can discuss the solutions with your team afterwards.
 
-The mock exam [will be posted here](./mockexams.md).
+The mock exams [will be posted here](./mockexams.md). Choose the first one from fall 2024. It is the one that is most similar to the exam you will have.
 
 ## Wednesday
 
-**Review of mock exam II - Online**
+**Review of mock exam II - in Lyngby**
 
-09:00 - 11:00 We will review the mock exam II on Wednesday in our review groups and with our regular review teacher. We will go through the solutions and discuss the problems. We will also discuss the things you need to learn and train before the exam. Hopefully, one of you will volunteer to present the solution to the rest of the class. Then we can make a "fake" exam situation.
+- 09:00 - 10:00 Demo of SP-2. The last teams will show their project and get feedback.
+
+- 10:00 - 12.30 Review of mock exam I: We will review the mock exam I. We will go through the solutions and discuss the problems. We will also discuss the things you need to learn and train before the exam. Hopefully, one of you will volunteer to present the solution to the rest of the class. Then we can make a "fake" exam situation.
 
 ## Thursday and Friday
 
 **Self-study days**
 
-Thursday and Friday are self-study days. We will be available on Discord for questions and clarifications. It is a good idea to use these days to train the things you have identified as weaknesses in your knowledge. It's also recommended to go through the mock exams again and see if you can solve them faster this time. It's the best way to prepare.
-
-### Bornholm
-
-Since we have been less on Bornholm for the past weeks, there will be a session with a teacher on Campus on Thursday from 09:00 to wrap things up.
+Thursday and Friday are self-study days. It is a good idea to use these days to train the things you have identified as weaknesses in your knowledge. It's also recommended to go through the mock exams again and see if you can solve them faster this time. It's the best way to prepare. Also, spend some time to craft a good "start code template".

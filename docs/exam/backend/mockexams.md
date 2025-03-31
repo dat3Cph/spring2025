@@ -12,7 +12,7 @@ permalink: /exam/backend/mock-exams
 
 This is a collection of mock exams for the Backend course. The exams are designed to test your knowledge of the course material. The exams are divided into sections, each focusing on a specific topic. The exams are designed to be challenging, so don't be discouraged if you find them difficult. Use them as a learning tool to help you prepare for the final exam. Also, the final exam will not be far from the mock ones.
 
-## Mock Exams I - Trip planning (fall 2024)
+## Mock Exams I - Trip planning (fall 2024 - ordinary exam)
 
 1. [Trips planning (pdf)](./docs/fall2024.pdf)
 2. [Trips planning (markdown)](./docs/fall2024.md)
