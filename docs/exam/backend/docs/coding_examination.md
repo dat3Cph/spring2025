@@ -2,7 +2,7 @@
 title: Coding Examination
 description: Help for the coding examination
 layout: default
-nav_order: 5
+nav_order: 9
 nav_exclude: false
 search_exclude: false
 parent: Backend

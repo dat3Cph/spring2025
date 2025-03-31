@@ -1,8 +1,8 @@
 ---
-title: Mock exam I
+title: Mock exam III
 description: Mock exam I for the Backend course
 layout: default
-nav_order: 3
+nav_order: 5
 parent: Backend
 grand_parent: Exam
 permalink: /exam/backend/garden-centre
@@ -10,7 +10,7 @@ permalink: /exam/backend/garden-centre
 
 # Mock Exam: Programming and Technology
 
-November 2024, the exam duration is set to 4 hours
+November 2023, the exam duration is set to 4 hours
 
 ## Exam guidelines
 
