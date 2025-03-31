@@ -8,9 +8,9 @@ grand_parent: Exam
 permalink: /exam/backend/hdj
 ---
 
-# Jons Her-Dumper-Jegliste
+# "Her-Dumper-Jeg" (HDJ)
 
-Følgende er en liste over vigtige ting, som jeg gennem årene har erfaret at studerende enten glemmer eller ikke har styr på, når de skal til eksamen. Listen er ikke udtømmende,
+Følgende er en liste over vigtige ting, som vi gennem årene har erfaret at studerende enten glemmer eller ikke har styr på, når de skal til eksamen. Listen er ikke udtømmende,
 
 ![HDJ](../../jpa_part1/exercises/images/hdj.png)
 
@@ -22,3 +22,4 @@ Følgende er en liste over vigtige ting, som jeg gennem årene har erfaret at st
 4. Husk at undgå cirkulære referencer i dine klasser.
 5. Husk at lave hjælpemetoder til at indsætte bi-directionelle relationer.
 6. Husk at bruge `CascadeType` i dine relationer - og brug det med omtanke. Dvs, at du ikke nødvendigvis skal bruge `CascadeType.ALL`.
+7. Overvej om du skal have FetchType.EAGER eller FetchType.LAZY i dine relationer.
