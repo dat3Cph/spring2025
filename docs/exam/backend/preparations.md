@@ -26,9 +26,9 @@ At the review:
 - Reflect on the process so far - and what you have learned
 - Make a list of the things you think you need to learn and train before the exam
 
-## Tuesday - mock exam II
+## Tuesday - mock exam I
 
-**09:00 - 14:00 - Mock exam II - Home assignment**
+**09:00 - 14:00 - Mock exam I - Home assignment**
 
 Try out a exam set. Give yourself 5 hours to solve it. You might not make it in 5 hours - but that is the point. You get faster by training. Solve the rest of the exercise afterwards.
 
@@ -38,7 +38,7 @@ The mock exams [will be posted here](./mockexams.md). Choose the first one from 
 
 ## Wednesday
 
-**Review of mock exam II - in Lyngby**
+**Review of mock exam I - in Lyngby**
 
 - 09:00 - 10:00 Demo of SP-2. The last teams will show their project and get feedback.
 
