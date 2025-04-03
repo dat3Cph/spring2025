@@ -62,7 +62,7 @@ permalink: /rest-intro
 
 - [Logback](https://www.baeldung.com/logback) - skim
 - [Javalin Exception Mapping](https://javalin.io/documentation#exception-mapping)
-- [3rd semester documentation format](../toolbox/rest/rest-api-documentation)
+- [3rd semester documentation format](../toolbox/rest/api_documentation.md)
 - [Rest-assured.io (5 min)](http://rest-assured.io/)
 - [Short Rest Assured Tutorial, read 1-7 (5 min)](https://www.baeldung.com/rest-assured-tutorial)
 - [Hamcrest guide (skim and use for reference 10 min)](https://www.baeldung.com/java-junit-hamcrest-guide)

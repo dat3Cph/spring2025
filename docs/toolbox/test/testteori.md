@@ -81,7 +81,7 @@ Overordnet set er forskellen at med en black-box test er vi kun interesseret i r
 Ækvivalensklassepartionering er en teknik, som kan anvendes på alle testniveauer. Teknikken inddeler data i partioner, der giver samme programadfærd. Der udledes en test (kaldes mere formelt for en testcase) for hver ækvivalensklasse. Dermed systematiseres identifikationen af test cases og antal test cases reduceres.
 
 Eksempel - metoden legalAge (er du myndig):  
-![drawing](./images/EPA_eksempel.PNG)
+![drawing](./images/EPA_eksempel.png)
 
 ### Grænseværdianalyse (black-box teknik)
 
@@ -89,7 +89,7 @@ Grænseværdianalyse identificerer test cases i grænserne for et datasæt. Tekn
 
 Eksempel - metoden legalAge (er du myndig):
 
-![drawing](./images/BVA_eksempel.PNG)
+![drawing](./images/BVA_eksempel.png)
 
 ### Code Coverage (white-box teknik)
 
