@@ -5,7 +5,7 @@ layout: default
 nav_order: 10
 parent: Backend
 grand_parent: Exam
-permalink: /exam/backend/fall2024
+permalink: /exam/backend/spring2025
 sitemap: false
 nav_exclude: true
 search_exclude: true
