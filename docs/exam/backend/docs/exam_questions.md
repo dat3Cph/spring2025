@@ -8,7 +8,7 @@ grand_parent: Exam
 permalink: /exam/backend/questions
 ---
 
-# Exam questions backend exam 2024
+# Exam questions backend exam 2025
 
 These are handpicked among our learning goals for the backend exam. They are meant to give you an idea of what to expect in the exam, and give you something to practice on. They are theoretical questions, but think about them in the context of your own code, and projects you have done during the semester.
 
