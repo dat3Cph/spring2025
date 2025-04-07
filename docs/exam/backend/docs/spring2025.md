@@ -14,13 +14,16 @@ search_exclude: true
 # Exam 2025 - Ski Instructor
 
 ### PDF Version
+
 [Ski instructor application - pdf](./skiinstructor.pdf)
 
 ## Exercise Guidelines
+
+- The solution for this exam should primarily be solved with the technologies you have learned in the course. That means within the [course materials on this website](https://dat3cph.github.io/spring2025/). Core technologies are Java, Javalin, JPA, Hibernate, Postgres, and REST. Other frameworks such as Spring Boot, Spring Data, or Spring Security are not allowed.
 - Allowed resources: written materials, personal computers, laptops, extra monitors, and internet resources. Headphones, and listening to music.
 - Prohibited: communication with anyone. So no use of social media, forums, emails, SMS, chatrooms, etc.
 - Do not store solutions on external networks or drives/hosts like Facebook, OneDrive, Google Drive, etc. And don't share your code on Github until the end of the exam.
-- Duration: 5 hours. Restroom breaks only. No smoking.
+- Duration: 5 hours. 
 
 ## Consider your problem-solving strategy (important)
 
@@ -45,6 +48,7 @@ search_exclude: true
 |       | **Total**                                           | **100%** |
 
 ## Hand in on Wiseflow
+- Set aside 10 minutes at the end of the exam to hand in your solution.
 
 1. A zip file containing your whole project, including the `README.md` file with answers to the theoretical questions.
 2. A link to your GitHub repository. Don't push your solutions until the very end of the exam. Do not copy the clone link from GitHub, but grab the link from the browser address bar and paste it into Wiseflow.
@@ -103,7 +107,7 @@ The application facilitates the booking of ski lessons with these properties:
 
 3.1 Develop a REST API with Javalin for ski lessons.
 
-3.2 Create a **SkiLessonController** that uses the SkiLessonDAO to persist data in the database. 
+3.2 Create a **SkiLessonController** that uses the SkiLessonDAO to persist data in the database.
 
 3.3 Create a **SkiLessonRoutes** file that uses the **SkiLessonController** to handle the API requests.
 
@@ -144,8 +148,10 @@ Feel free to add more error handling as needed.
 
 5.1 Create a method in **SkiLessonController** to filter ski lessons by level, and add a new route to the **SkiLessonRoutes** file to handle the request.
 
-5.2 In a similar manner, find a way to get an overview with each instructor. 
-- Choose between these two outputs: (The latter might is a little harder) 
+5.2 In a similar manner, find a way to get an overview with each instructor.
+
+- Choose between these two outputs: (The latter might is a little harder)
+
 1. The total sum price of all lessons offered by each instructor. Like this:
 
 ```json
@@ -159,8 +165,9 @@ Feel free to add more error handling as needed.
   "totalPrice": 2000
 }
 ]
-``` 
-or 
+```
+
+or
 2. The sum of lesson time for each instructor. Like this:
 
 ```json
@@ -175,7 +182,6 @@ or
 }
 ]
 ```
-
 
 ## Task 6: Getting Additional Data from API (15%)
 
@@ -217,7 +223,9 @@ or
 ]
 
 ```
+
 6.2 Implement a method in the SkiLessonController that fetches ski lesson instructions for lessons based on the level (beginner, intermediate, advanced).
+
 - The method should return a list of ski lesson instructions for the given level.
 
 6.3 Add the ski lesson instructions to the response of the endpoint for getting a ski lesson by id.
