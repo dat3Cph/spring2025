@@ -23,14 +23,10 @@ Topics covered in this week are:
 [Learning objectives for the week](./learningobjectives.md)
 
 ## Monday - review - online
+We meet on Zoom.
 
-Each team is on for 60 minutes. We meet in Jons Zoom Room.
+You can see when, in the message sent to you on moodle. 
 
-- 09:00 - 10:00 Team A
-
-- 10:00 - 11:00 Team B
-
-- 11:00 - 11:45 Team Bornholm
 
 [Agenda for each review session](./review_agenda.md)
 
