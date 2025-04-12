@@ -6,9 +6,9 @@ nav_order: 10
 parent: Backend
 grand_parent: Exam
 permalink: /exam/backend/spring2025
-sitemap: false
-nav_exclude: true
-search_exclude: true
+sitemap: true
+nav_exclude: false
+search_exclude: false
 ---
 
 # Exam 2025 - Ski Instructor
@@ -23,7 +23,7 @@ search_exclude: true
 - Allowed resources: written materials, personal computers, laptops, extra monitors, and internet resources. Headphones, and listening to music.
 - Prohibited: communication with anyone. So no use of social media, forums, emails, SMS, chatrooms, etc.
 - Do not store solutions on external networks or drives/hosts like Facebook, OneDrive, Google Drive, etc. And don't share your code on Github until the end of the exam.
-- Duration: 5 hours. 
+- Duration: 5 hours.
 
 ## Consider your problem-solving strategy (important)
 
@@ -48,6 +48,7 @@ search_exclude: true
 |       | **Total**                                           | **100%** |
 
 ## Hand in on Wiseflow
+
 - Set aside 10 minutes at the end of the exam to hand in your solution.
 
 1. A zip file containing your whole project, including the `README.md` file with answers to the theoretical questions.
