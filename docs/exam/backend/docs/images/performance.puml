@@ -1,0 +1,30 @@
+
+@startuml
+hide circles
+hide methods
+
+left to right direction
+
+' Define a wider table title by appending spaces (these are preserved in PlantUML)
+class " Performance  " as Performance << (T,#FFAAAA) >>
+class "Actor" as Actor << (T,#FFAAAA) >>
+
+Actor : id
+Actor : firstName
+Actor : lastName
+Actor : email
+Actor : phone
+Actor : yearsOfExperience
+
+Performance : id
+Performance : startTime
+Performance : endTime
+Performance : title
+Performance : genre
+Performance : ticketPrice
+Performance : location
+Performance : actor_id
+
+Actor ||--o{ Performance : leads
+
+@enduml
