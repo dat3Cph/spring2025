@@ -23,10 +23,10 @@ Topics covered in this week are:
 [Learning objectives for the week](./learningobjectives.md)
 
 ## Monday - review - online
+
 We meet on Zoom.
 
-You can see when, in the message sent to you on moodle. 
-
+You can see when, in the message sent to you on moodle.
 
 [Agenda for each review session](./review_agenda.md)
 
@@ -64,7 +64,8 @@ Orient yourself in this documentation:
 Orient yourself in this documentation:
 
 - [Json server](../../toolbox/react/json-server.md)
-- [React Forms]()
+- [React Forms: Controlled Components](../../toolbox/react/controlled_component.md)
+- [React Forms: Uncontrolled Components](../../toolbox/react/uncontrolled_component.md)
 
 ### In-class exersises
 
