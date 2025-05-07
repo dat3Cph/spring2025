@@ -245,7 +245,7 @@ DB_NAME=hotel
 12. Now, in the useEffect method in the LoggedIn component, add this call to fetchData added to the facade in the previous step:
 
     ```js
-    facade.fetchData().then(data=> setDataFromServer(data.msg));
+    facade.fetchData().then(data=> setDataFromServer(data));
     ```
 
 13. Verify that you can login, and when logged in, that you can fetch data from the protected endpoint on the server.
