@@ -68,24 +68,13 @@ The system you will build is a car rental system. It consists of two main entiti
 - Use streams or queries to summarize booking info per car
 - Choose one output format (total days or total price)
 
-## Task 6: External API Integration (15%)
-### User Stories
-- As a customer, I want to see maintenance tips for the car I'm renting, based on its make
-- As a customer, I want to know the total estimated time for all recommended maintenance tips
-
-### Actions
-- Fetch data from an external API (https://apiprovider.cphbusinessapps.dk/cartips/{make})
-- Add maintenance tips to the car detail endpoint
-- Add a new endpoint that returns total maintenance duration per car
-- Document the API responses in README.md with test results
-
-## Task 7: REST Testing (15%)
+## Task 6: REST Testing (15%)
 ### Requirements
 - Use RestAssured to test all endpoints
 - Setup Javalin and test data in @BeforeAll and @BeforeEach
 - Verify booking responses include car info and maintenance tips
 
-## Task 8: Security (5%)
+## Task 7: Security (15%)
 
 ### User Stories
 - As a user, I want to log in so I can manage my bookings
