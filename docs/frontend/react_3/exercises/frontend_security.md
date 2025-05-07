@@ -105,7 +105,7 @@ DB_NAME=hotel
 
       const performLogin = (evt) => {
         evt.preventDefault();
-        facade.login(loginCredentials.username, loginCredentials.password);
+        login(loginCredentials.username, loginCredentials.password);
       }
       const onChange = (evt) => {
         setLoginCredentials({ ...loginCredentials,[evt.target.id]: evt.target.value })
