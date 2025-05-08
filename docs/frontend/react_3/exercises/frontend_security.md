@@ -54,8 +54,6 @@ DB_NAME=hotel
     return res.json()
     }
 
-    function apiFacade() {
-
     /* Insert utility-methods from later steps 
     here (REMEMBER to uncomment in the returned 
     object when you do)*/
@@ -80,7 +78,9 @@ DB_NAME=hotel
       }
       return opts;
     }
-    return {
+  
+  
+    const facade = {
         makeOptions,
         //setToken,
         //getToken,
@@ -89,8 +89,7 @@ DB_NAME=hotel
         //logout,
         fetchData
     }
-    }
-    const facade = apiFacade();
+
     export default facade;
     ```
 
