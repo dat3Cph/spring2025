@@ -2,7 +2,7 @@
 title: Errorhandling in React
 description: 3 types of errors and how to handle them in a React application
 layout: default
-nav_order: 14
+nav_order: 16
 parent: React
 grand_parent: Toolbox
 has_children: false

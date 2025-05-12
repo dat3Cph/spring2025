@@ -23,13 +23,12 @@ The student should be able to:
 4. Explain the general pros and cons of using a styling toolkit like Bootstrap, Tailwind etc.
 
 5. Explain the purpose of, and demonstrate the use of
-   - CSS Positioning
    - CSS Flexbox
    - CSS Grid
    - Media queries
 
 6. Explain the purpose of, and demonstrate the use of
-   - Styled Components
+   - CSS Modules
 
 ## Deployent with Github Action and Caddy
 

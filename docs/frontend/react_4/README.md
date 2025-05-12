@@ -35,27 +35,21 @@ Exam questions that could be relevant for the review:
 
 ## Tuesday (class)
 
-Styling in React with Styled Components
+Styling in React with CSS Modules.
 
 ### Prepare for the class
 
-Skim through the following resources:
-
-- [Styled Components](https://scalablecss.com/styled-components-quickstart-guide/)
-
-Watch the following videos:
-
-- [Styled Components Is the Only Way To Do CSS](https://www.youtube.com/watch?v=54-hITMASgM)
-
-- [Styled Components in React - All you need to know](https://www.youtube.com/watch?v=kClcUzAhz9g)
+- [General intro to applying CSS with React (6:22)](https://www.youtube.com/watch?v=ouncVBiye_M)
+- [The Best Way To Style Components In React (4:34)](https://www.youtube.com/watch?v=i63WQrzrKag)
+- [An Interactive Guide to CSS Grid](https://www.joshwcomeau.com/css/interactive-guide-to-grid/)
 
 ### In-class exercises
 
-- [Styling a todo app](./exercises/styling-in-react.md)
+- [Styling the timer application with CSS Modules](./exercises/styling-with-css-modules.md)
 
 ## Wednesday (CodeLab)
 
-- [Practicing styling with styled-components and error handling](./exercises/codelab.md)
+- [Practicing styling with CSS Modules and error handling](./exercises/codelab.md)
 
 ## Thursday (class)
 
