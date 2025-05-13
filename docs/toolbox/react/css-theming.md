@@ -122,7 +122,7 @@ export default App;
 
 ## ➕ Bonus: Adding a Global CSS File
 
-You can also include a global CSS file for base styles (like fonts, resets, or utility classes).
+Include a global CSS file for base styles (like vars, fonts, resets, or utility classes).
 
 ### 1. Create `src/global.css`
 
@@ -187,6 +187,7 @@ This is called **prop drilling**.
 ### 1. Create a context file `ThemeContext.jsx`
 
 ```jsx
+{% raw %}
 import { createContext, useContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext();
@@ -211,6 +212,7 @@ export function ThemeProvider({ children }) {
 export function useTheme() {
   return useContext(ThemeContext);
 }
+{% endraw %}
 ```
 
 ### 2. Wrap your app in `ThemeProvider`
@@ -231,7 +233,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </ThemeProvider>
   </React.StrictMode>
 );
-```
+````
 
 ### 3. Use context in `App.jsx`
 
@@ -241,7 +243,6 @@ import ThemeToggle from './ThemeToggle';
 import { useTheme } from './ThemeContext';
 
 function App() {
-  const { theme } = useTheme();
 
   return (
     <div className={styles.app}>
@@ -284,9 +285,11 @@ When you create a context with `createContext()`, you're telling React: *"I want
 So this:
 
 ```jsx
+{% raw %}
 <ThemeContext.Provider value={{ theme, toggleTheme }}>
   <App />
 </ThemeContext.Provider>
+{% endraw %}
 ```
 
 Makes the `theme` and `toggleTheme` available anywhere inside `<App />` using:

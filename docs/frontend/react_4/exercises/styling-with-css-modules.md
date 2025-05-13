@@ -70,6 +70,7 @@ permalink: /frontend/react-4/exercises/styling-with-css-modules/
    - [CSS Variables](https://www.w3schools.com/css/css3_variables.asp)
    - [CSS Modules](../../../toolbox/react/css_modules.md)
    - [Light/Dark Mode](../../../toolbox/react/css-theming.md)
+   - [Brief explanation of the useContext hook](https://www.youtube.com/watch?v=_HdrLsyAdJg)
 
 9. **Impress your friends**
 
