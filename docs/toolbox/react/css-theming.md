@@ -8,7 +8,17 @@ grand_parent: Toolbox
 has_children: false
 permalink: /toolbox/react/css-theming/
 ---
-# 📚 React Tutorial: Light/Dark Mode with CSS Modules
+# 📚 Light/Dark Mode with CSS Modules
+
+This tutorial teaches you how to:
+
+1. Build a light/dark mode toggle using `useState` and CSS Modules
+2. Understand and solve prop drilling using React Context
+3. Add and use a global CSS file in a React project
+4. Understand how `useContext` works internally
+5. Use CSS variables and `body` class for scalable theming
+
+---
 
 ## ✅ Part 1: Light/Dark Mode using CSS Modules and `useState`
 
@@ -41,14 +51,11 @@ src/
   transition: background-color 0.3s, color 0.3s;
 }
 
-.light {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.dark {
-  background-color: #1e1e1e;
-  color: #f5f5f5;
+.card {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 ```
 
@@ -80,10 +87,10 @@ export default function ThemeToggle({ theme, toggleTheme }) {
 }
 ```
 
-### 6. `App.jsx`
+### 6. `App.jsx` (with CSS variables)
 
 ```jsx
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './App.module.css';
 import ThemeToggle from './ThemeToggle';
 
@@ -94,11 +101,16 @@ function App() {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   return (
-    <div className={`${styles.app} ${styles[theme]}`}>
+    <div className={styles.app}>
       <h1>Hello React</h1>
-      <p>This app has a light/dark mode toggle using CSS Modules.</p>
+      <p>This app uses CSS variables for a scalable theme system.</p>
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
+      <div className={styles.card}>Themed content box</div>
     </div>
   );
 }
@@ -115,9 +127,24 @@ You can also include a global CSS file for base styles (like fonts, resets, or u
 ### 1. Create `src/global.css`
 
 ```css
+:root {
+  --bg: #ffffff;
+  --fg: #000000;
+  --card-bg: #f9f9f9;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --fg: #f5f5f5;
+  --card-bg: #2a2a2a;
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+  transition: background-color 0.3s, color 0.3s;
 }
 ```
 
@@ -136,7 +163,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 );
 ```
 
-This global stylesheet will apply to your whole app.
+This global stylesheet will apply to your whole app and supports scalable theming using CSS variables.
 
 ---
 
@@ -160,7 +187,7 @@ This is called **prop drilling**.
 ### 1. Create a context file `ThemeContext.jsx`
 
 ```jsx
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext();
 
@@ -169,6 +196,10 @@ export function ThemeProvider({ children }) {
   const toggleTheme = () => {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
@@ -213,9 +244,10 @@ function App() {
   const { theme } = useTheme();
 
   return (
-    <div className={`${styles.app} ${styles[theme]}`}>
+    <div className={styles.app}>
       <h1>Hello React</h1>
       <ThemeToggle />
+      <div className={styles.card}>Themed content box</div>
     </div>
   );
 }
@@ -273,4 +305,5 @@ This solves the prop drilling problem because you don't need to pass `theme` thr
 * `useState` can toggle themes simply, but prop drilling becomes an issue.
 * `useContext` is a clean and scalable way to share state across the app without manually passing props.
 * A global CSS file can be used for general layout or browser reset styles.
+* CSS variables combined with a `body` class make it easy to handle many theme-based style rules.
 * `useContext` works by giving components direct access to shared values defined by a Provider.
