@@ -8,14 +8,7 @@ grand_parent: Toolbox
 has_children: false
 permalink: /toolbox/react/css-theming/
 ---
-# 📚 Light/Dark Mode with CSS Modules
-
-This tutorial teaches you how to:
-
-1. Build a light/dark mode toggle using `useState` and CSS Modules
-2. Understand and solve prop drilling using React Context
-
----
+# 📚 React Tutorial: Light/Dark Mode with CSS Modules
 
 ## ✅ Part 1: Light/Dark Mode using CSS Modules and `useState`
 
@@ -115,6 +108,38 @@ export default App;
 
 ---
 
+## ➕ Bonus: Adding a Global CSS File
+
+You can also include a global CSS file for base styles (like fonts, resets, or utility classes).
+
+### 1. Create `src/global.css`
+
+```css
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+```
+
+### 2. Import it once in your entry point (usually `main.jsx` or `main.tsx`)
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './global.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+```
+
+This global stylesheet will apply to your whole app.
+
+---
+
 ## ⚠️ Problem: Prop Drilling
 
 What if you need the `theme` in many nested components? Passing props through many layers becomes messy.
@@ -166,6 +191,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { ThemeProvider } from './ThemeContext';
+import './global.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -216,10 +242,35 @@ export default function ThemeToggle() {
 
 ---
 
+## 🤔 How `useContext` Works
+
+When you create a context with `createContext()`, you're telling React: *"I want to be able to share this value with any component in the tree without passing it through props manually."*
+
+1. `ThemeContext.Provider` makes the value available to all components inside it.
+2. `useContext(ThemeContext)` allows a child component to access that value directly.
+
+So this:
+
+```jsx
+<ThemeContext.Provider value={{ theme, toggleTheme }}>
+  <App />
+</ThemeContext.Provider>
+```
+
+Makes the `theme` and `toggleTheme` available anywhere inside `<App />` using:
+
+```jsx
+const { theme, toggleTheme } = useContext(ThemeContext);
+```
+
+This solves the prop drilling problem because you don't need to pass `theme` through every component manually.
+
+---
+
 ## 🚀 Summary
 
 * CSS Modules keep styles **scoped** to each component.
 * `useState` can toggle themes simply, but prop drilling becomes an issue.
 * `useContext` is a clean and scalable way to share state across the app without manually passing props.
-
----
+* A global CSS file can be used for general layout or browser reset styles.
+* `useContext` works by giving components direct access to shared values defined by a Provider.
