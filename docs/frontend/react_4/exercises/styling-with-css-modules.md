@@ -13,7 +13,7 @@ permalink: /frontend/react-4/exercises/styling-with-css-modules/
 1. **Clone the exercise code** from the Coffee Timer Repo:
 
    ```bash
-   git clone --branch nostyling <https://github.com/jonbertelsen/coffeetimer
+   git clone --branch nostyling https://github.com/jonbertelsen/coffeetimer
    ```
 
 2. **Install the dependencies** using:
