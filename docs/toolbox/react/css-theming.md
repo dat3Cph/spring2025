@@ -215,6 +215,27 @@ export function useTheme() {
 {% endraw %}
 ```
 
+**What is `useTheme()`?**
+
+This is a **custom React hook**. A custom hook is just a JavaScript function that:
+
+- Starts with the word `use`
+- Calls built-in React hooks (like `useContext`, `useState`, etc.)
+
+In this case, `useTheme()` is a convenience function that wraps `useContext(ThemeContext)` so that any component can simply write:
+
+```js
+const { theme, toggleTheme } = useTheme();
+```
+
+instead of repeating:
+
+```js
+const { theme, toggleTheme } = useContext(ThemeContext);
+```
+
+This improves readability and keeps your components clean.
+
 ### 2. Wrap your app in `ThemeProvider`
 
 Edit `main.jsx`:
@@ -233,7 +254,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </ThemeProvider>
   </React.StrictMode>
 );
-````
+```
 
 ### 3. Use context in `App.jsx`
 
@@ -304,9 +325,9 @@ This solves the prop drilling problem because you don't need to pass `theme` thr
 
 ## 🚀 Summary
 
-* CSS Modules keep styles **scoped** to each component.
-* `useState` can toggle themes simply, but prop drilling becomes an issue.
-* `useContext` is a clean and scalable way to share state across the app without manually passing props.
-* A global CSS file can be used for general layout or browser reset styles.
-* CSS variables combined with a `body` class make it easy to handle many theme-based style rules.
-* `useContext` works by giving components direct access to shared values defined by a Provider.
+- CSS Modules keep styles **scoped** to each component.
+- `useState` can toggle themes simply, but prop drilling becomes an issue.
+- `useContext` is a clean and scalable way to share state across the app without manually passing props.
+- A global CSS file can be used for general layout or browser reset styles.
+- CSS variables combined with a `body` class make it easy to handle many theme-based style rules.
+- `useContext` works by giving components direct access to shared values defined by a Provider.
