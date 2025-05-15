@@ -40,7 +40,7 @@ The React application should be built with these technologies:
 
 - Deadline is Sunday at 20:00.
 
-- Hand-in: [On Moodle](https://cphbusiness.mrooms.net/mod/assign/view.php?id=752287). You should hand in a link to the deployed React application. As soon as your deploy your website, you can hand it in. You can always update the website later on. That's the beauty of CI/CD.
+- Hand-in: [On Moodle](https://cphbusiness.mrooms.net/mod/assign/view.php?id=798220). You should hand in a link to the deployed React application. As soon as your deploy your website, you can hand it in. You can always update the website later on. That's the beauty of CI/CD.
 
 ## Review
 
@@ -64,4 +64,4 @@ A: Then hand-in a link to the repository instead. But begin by trying to deploy 
 
 ### Q: Can we work in other team constellations in SP-3?
 
-A: Yes, you can. Sign up your team on Moodle here: [SP-3: The Frontend Hub](https://cphbusiness.mrooms.net/mod/choicegroup/view.php?id=752290).
+A: Yes, you can. Sign up your team on Moodle here: [SP-3: The Frontend Hub](https://cphbusiness.mrooms.net/mod/choicegroup/view.php?id=798219).
