@@ -10,7 +10,7 @@ permalink: /exam/frontend/exam-questions
 
 # Exam questions
 
-Frontend Exam January 2025
+Frontend Exam June 2025
 
 <div style="page-break-after: always;"></div>
 
@@ -28,7 +28,7 @@ Frontend Exam January 2025
 ### Security/Routing/Styling
 
 4. Explain what React-Router is and which problems does it solve?
-5. Show and explain the essential building blocks like `BrowserRouter, Routes, Route, Outlet, path, element, errorElement, useNavigate etc.`.
+5. Show and explain the essential building blocks of React-Router.
 
 <div style="page-break-after: always;"></div>
 
@@ -63,7 +63,7 @@ Frontend Exam January 2025
 
 ### Security/Routing/Styling
 
-4. Describe conceptually how we deploy a React frontend application to the Caddy server through the CI/CD pipeling.
+4. Describe conceptually how we deploy a React frontend application to the Caddy server through the CI/CD pipeline.
 
 <div style="page-break-after: always;"></div>
 
@@ -71,11 +71,12 @@ Frontend Exam January 2025
 
 ### JS
 
-1. Show and explain the concept of promises in JavaScript.
+1. Show and explain how to use the fetch function in JavaScript.
 
 ### REACT
 
 1. How do you handle errors (HTTP or JS errors) in React? Show examples in you own code.
+Also how to notify the user about errors.
 
 ### Security/Routing/Styling
 
@@ -114,6 +115,8 @@ Frontend Exam January 2025
 
 4. Show and explain the different parts of a JWT token.
 
+5. How do we use it in our React application?
+
 <div style="page-break-after: always;"></div>
 
 ## Question 7
@@ -141,7 +144,7 @@ Frontend Exam January 2025
 
 ### REACT
 
-2. Show and explain how the map function is used for rendering lists in React and explain the purpose of the `key` attribute in React lists?
+2. Show and explain how the `map` function is used for rendering lists in React and explain the purpose of the `key` attribute in React lists?
 
 ### Security/Routing/Styling
 
@@ -194,7 +197,7 @@ Frontend Exam January 2025
 
 ### Security/Routing/Styling
 
-3. Show how you can use `flexbox` in `Styled-Components`.
+3. Show how you can use `flexbox` in `CSS Modules`.
 
 <div style="page-break-after: always;"></div>
 
@@ -202,7 +205,7 @@ Frontend Exam January 2025
 
 ### JS
 
-1. Show and explain the concept of promises in JavaScript.
+1. Show and explain how to use the fetch function in JavaScript and how to handle errors. Show examples in your own code for GET and POST requests.
 
 ### REACT
 

@@ -10,7 +10,10 @@ permalink: /frontend/react-4/
 
 Topics covered in this week are:
 
-- Styled Components
+- CSS 101 - Flexbox, Grid, and CSS Variables
+- CSS Modules
+- Light and dark theming with CSS Modules
+- The UseContext hook
 - Architecture of a full stack application
 - Deployment with Github Actions and Caddy
 

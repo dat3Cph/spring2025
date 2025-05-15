@@ -32,7 +32,7 @@ You should create and deploy (1 per team) a React application that can display:
 The React application should be built with these technologies:
 
 1. React Router. You should have at least three routes. A main page, a vision page, and an endpoints page. But feel free to add more.
-2. Use Styled Components for styling.
+2. Use **CSS Modules** for styling.
 3. Make the website responsive. Use media queries and flexbox/grid to make it look good on all devices.
 4. Add a nice image to the main page. It could be a logo or something that represents the API. The image resolution should be 300x300 pixels. And the image format is png
 

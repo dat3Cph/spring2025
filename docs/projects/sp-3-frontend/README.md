@@ -29,10 +29,11 @@ Secondarily, you should:
 
 - Use React
 - Use React Router
-- Use CSS and Styled Components for styling
+- Use CSS Modules for styling components
 - Deploy the frontend to a Digital Ocean Droplet
 - Use GitHub Actions for CI/CD
 - Implement login and authentication using JWT
+- Implement error handling and give feedback to the user
 - Implement CRUD operations as needed
 
 Thirdly, you should:
