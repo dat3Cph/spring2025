@@ -73,7 +73,7 @@ See this video about the linux command `rsync`:
 
 ## Friday (exercise day)
 
-- [TBD](./exercises/friday.md)
+- [API Hub Vision Website](./exercises/friday.md)
 
 <hr>
 
