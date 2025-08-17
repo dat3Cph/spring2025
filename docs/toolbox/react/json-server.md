@@ -13,17 +13,17 @@ permalink: /toolbox/react/json-server
 
 [npm json server](https://www.npmjs.com/package/json-server) and [json-server](https://github.com/typicode/json-server) is a great tool for creating a mock server for your frontend projects. It is easy to use and can be set up in minutes.
 
-1. **Prerequisites** Make sure you have the following installed:
+**Prerequisites** Make sure you have the following installed:
 
 - node and npm
 
-2. install json-server in the project
+1. install json-server in the project
 
    ```
    npm install --save json-server
    ```
 
-3. Ad a script to package.json (like line 5 below:) (todos.json is the file created in step 1 above)
+2. Add a backend script to package.json (like line 5 below:)
 
    ```json
     "scripts": {
@@ -34,9 +34,9 @@ permalink: /toolbox/react/json-server
      },
    ```
 
-4. create dummy data by making a javascript program and run it with node.
+## Create dummy data by making a javascript program and run it with node.
 
-5. Create a file in the working folder: mockdata.js:
+3. Create a file in the working folder: mockdata.js:
 
 ```javascript
 import casual from 'casual';
@@ -62,7 +62,7 @@ for(var i=101; i<=115; i++){
 console.log(JSON.stringify(db));
 ```
 
-6. This script is using `casual` to generate random data. Install it into the same folder.
+4. This script is using `casual` to generate random data. Install it into the same folder.
 
 ```
 npm install casual --save-dev
@@ -84,10 +84,10 @@ It will write an array of 15 book objects into a file: booksjb.json
 
 Open the file to see the data format (or in the bash just `node mockdata.js` without the pipe `>` character)
 
-7. Now the json-server can be started with:
+5. Now the json-server can be started with:
 
    ```
    npm run backend
    ```
 
-8. In a browser open url: `http://localhost:4000/books` to see the server running.
+6. In a browser open url: `http://localhost:4000/books` to see the server running.
